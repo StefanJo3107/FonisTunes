@@ -1,0 +1,153 @@
+.btn-mode
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    background: none
+    box-shadow: none
+    border: none
+    border-radius: 0
+    &:hover
+        border-bottom: 2px solid #fff
+.post-slider
+    display: none
+    z-index: 1
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 100%
+    transform: translate(-50%, -50%)
+    &.show
+        display: block
+    .next, .prev
+        position: absolute
+        top: 50%
+        color: var(--secondary-color)
+        cursor: pointer
+        &:hover
+            color: black
+    .next
+        right: 25px
+    .prev
+        left: 25px
+    .post-wrapper
+        width: 84%
+        height: 350px
+        margin: 0 auto
+        overflow: hidden
+        .post
+            margin: 0px 10px
+            width: 300px
+            height: 350px
+            display: inline-block  
+            cursor: pointer    
+            outline: none      
+            img
+                margin-left: 5%
+                width: 90%
+                height: 80%
+                border-radius: 4em
+            h4
+                color: var(--secondary-color)
+                text-shadow: 7px 7px 0 rgba(0, 0, 0, 0.1)
+                font-weight: 600
+                font-size: 2.5em
+                text-align: center
+                padding-bottom: 150px 
+                font-family: var(--primary-font-family)
+                text-transform: uppercase
+.slider-title
+    text-align: center
+    margin: 30px auto
+    font-family: var(--primary-font-family)
+    font-size: 4em
+    color: var(--secondary-color)
+.tabs
+    z-index: 3
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    .container
+        margin: 0 auto
+        max-width: 400px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 1rem
+        align-items: center
+        justify-content: center
+        text-align: center
+        &>div
+            color: var(--secondary-color)
+            padding: 1.5rem 0
+            &:hover
+                color: white
+                cursor: pointer
+    p
+        font-size: 1.6em
+        padding-top: .6em
+        font-family: var(--primary-font-family)       
+.scoreboard
+    z-index: 1
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 100%
+    transform: translate(-50%, -50%)
+    display: none
+    &.show
+        display: block
+    .container
+        margin: 25px 0
+        font-size: 1.6em
+        min-width: 500px
+        padding: 20px
+        font-weight: 600
+        color: var(--secondary-color)
+        font-family: var(--primary-font-family)
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        table
+            border-collapse: collapse 
+            width: 60%
+            thead tr
+                background-color: var(--table-primary-color)
+                color: var(--primary-color)
+                text-align: left
+                th:nth-child(1)
+                    border-bottom-left-radius: 15px
+                    border-top-left-radius: 15px
+                th:nth-child(3)
+                    border-bottom-right-radius: 15px
+                    border-top-right-radius: 15px
+            th, td
+                padding: 12px 15px
+            tbody tr
+                font-weight: 300
+                td:nth-child(1)
+                    border-bottom-left-radius: 15px
+                    border-top-left-radius: 15px
+                td:nth-child(3)
+                    border-bottom-right-radius: 15px
+                    border-top-right-radius: 15px
+                &:hover
+                    background-color: var(--table-hover-color)
+                    color: var(--primary-color)
+                &:nth-of-type(even)
+                    background-color: var(--table-secondary-color)
+                    color: var(--primary-color)
+                    &:hover
+                        background-color: var(--table-hover-color)
+                        color: var(--primary-color)
+                    td:nth-child(1)
+                        border-bottom-left-radius: 15px
+                        border-top-left-radius: 15px
+                    td:nth-child(3)
+                        border-bottom-right-radius: 15px
+                        border-top-right-radius: 15px
+
+
+                    
+                    
+            

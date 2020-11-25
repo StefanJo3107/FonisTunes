@@ -1,0 +1,68 @@
+*
+    box-sizing: border-box
+*:before, *:after
+    box-sizing: inherit
+:root
+    --primary-color: #e1e5ec
+    --secondary-color: #2b3b57
+    --table-primary-color: #491dafcb
+    --table-secondary-color:  #5149c465
+    --table-hover-color: #5149c4e7
+    --primary-font-family: 'Amatic SC', cursive
+.section
+    position: relative
+    width: 100%
+    height: 100vh
+    overflow: hidden
+    nav
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+        display: flex
+        justify-content: space-between
+        width: 100%
+    .video-container
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        .color-overlay
+            position: absolute
+            top: 0
+            left: 0
+            background-color: lightblue
+            width: 100%
+            height: 100vh
+            opacity: 0.2
+        video
+            width: 100%
+.btn
+    z-index: 1
+    text-align: center
+    outline: none
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    cursor: pointer
+    width: 10em
+    height: 4em
+    padding: .6em
+    border-radius: 1rem
+    font-size: 1.5em
+    color: var(--secondary-color)
+    transform: scale(0.95)
+    transition: transform .5s
+    box-shadow: 7px 15px 0 rgba(0, 0, 0, 0.4)
+    background-color: var(--primary-color)
+    &:hover
+        transform: scale(1)
+    .icon-play
+        color: var(--secondary-color)
+.span-text
+    text-transform: uppercase
+    font-weight: 600
+    font-family: var(--primary-font-family)
+    font-size: 1.2em
+.tab-border
+    border-bottom: 4px solid var(--primary-color)
+.menu, .tabs
+    background-color: rgba(255, 255, 255, 0.5)

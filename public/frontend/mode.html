@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Fonis Tunes | Dance with us</title>
+</head>
+<body>
+    <div class="section section-second">
+        <nav class="menu mode-menu">
+            <button class="btn btn-mode logout"><span class="icon-logout"><i class="fas fa-door-open fa-2x"></i></span><span class="span-text span-logout">Logout</span></button>
+            <button class="btn btn-mode user"><span class="span-text span-username">Guest</span><span class="icon-user"><i class="fas fa-user fa-2x"></i></span></button>
+        </nav>
+        <!-- Slider -->
+        
+        <div id="tab-1-content" class="post-slider tab-content-item show">
+            <h1 class="slider-title">Choose mode</h1>
+            <i class="fas fa-chevron-left prev fa-2x"></i>
+            <i class="fas fa-chevron-right next fa-2x"></i>
+            
+            <div class="post-wrapper">
+                <div class="post post-random">
+                    <img src="images/random.jpg" alt="music" class="slider-image">
+                    <div class="post-info">
+                        <h4>Random</h4>
+                    </div>
+                </div>
+                <div class="post post-rock">
+                    <img src="images/rock.jpg" alt="rock" class="slider-image">
+                    <div class="post-info">
+                        <h4>Rock</h4>
+                    </div>
+                </div>
+                <div class="post post-pop">
+                    <img src="images/pop.jpg" alt="pop" class="slider-image">
+                    <div class="post-info">
+                        <h4>Pop</h4>
+                    </div>
+                </div>
+                <div class="post post-classic">
+                    <img src="images/classic.jpg" alt="classical music" class="slider-image">
+                    <div class="post-info">
+                        <h4>Classical music</h4>
+                    </div>
+                </div>
+                <div class="post post-rep">
+                    <img src="images/rep.jpg" alt="rep" class="slider-image">
+                    <div class="post-info">
+                        <h4>Rep</h4>
+                    </div>
+                </div>
+                <div class="post post-jazz">
+                    <img src="images/jazz.jpg" alt="jazz" class="slider-image">
+                    <div class="post-info">
+                        <h4>Jazz</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted>
+                <source src="videos/final.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!-- Table, score-->
+        <div id="tab-2-content" class="scoreboard tab-content-item">
+            <h1 class="slider-title">Scoreboard</h1>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Score</th>
+                            <th>Mode</th>
+                        </tr>
+                    </thead>
+                    <tbody class="scores">
+                        <tr>
+                            <td class="player-name">Dzeca</td>
+                            <td class="player-score">2000</td>
+                            <td class="chosen-mode">Pop</td>
+                        </tr>
+                        <tr>
+                            <td>Stefan</td>
+                            <td>1800</td>
+                            <td>Rep</td>
+                        </tr>
+                        <tr>
+                            <td>Peđa</td>
+                            <td>1800</td>
+                            <td>Rock</td>
+                        </tr>
+                        <tr>
+                            <td>Vladimir</td>
+                            <td>1600</td>
+                            <td>Random</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+        <!-- Tabs -->
+        <section class="tabs">
+            <div class="container">
+                <div id="tab-1" class="tab-item tab-border">
+                    <i class="fas fa-gamepad fa-2x"></i>
+                    <p>Mode</p>
+                </div>
+                <div id="tab-2" class="tab-item">
+                    <i class="far fa-clipboard fa-2x"></i>
+                    <p>Scoreboard</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/tilt.js"></script>
+    <script src="js/mode.js"></script>
+</body>
+</html>
