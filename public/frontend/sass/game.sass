@@ -1,0 +1,48 @@
+.section-third
+    nav
+        justify-content: space-around
+    h1, h2
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 2.5em
+        font-family: var(--primary-font-family)
+        color: var(--secondary-color)
+    h2
+        font-size: 1em
+    .btn-mode.user
+        pointer-events: none
+    .game-header
+        width: 80%
+        z-index: 1
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        .slider-title
+            color: #2b3b57de
+            font-size: 3em
+        .answers
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            width: 100%
+            height: 350px
+            .answer
+                width: 60%
+                height: 50px
+                min-width: 400px
+                background-color: var(--table-secondary-color)
+                cursor: pointer
+                transform: scale(0.97)
+                transition: all .5s
+                border-radius: 40rem
+                &.text
+                    color: #fff
+                    line-height: 50px
+                    letter-spacing: 2px
+                &:hover
+                    transform: scale(1)
+                    background-color: var(--table-hover-color)
+                &:active
+                    transform: translateY(25px)
