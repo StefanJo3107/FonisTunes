@@ -15,6 +15,22 @@
   --primary-font-family: "Amatic SC", cursive;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .section {
   position: relative;
   width: 100%;
@@ -239,14 +255,22 @@
   font-weight: 600;
   color: var(--secondary-color);
   font-family: var(--primary-font-family);
-  width: 100%;
+  width: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 338px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
 }
 .scoreboard .container table {
   border-collapse: collapse;
-  width: 60%;
+  width: 98%;
+  position: absolute;
+  top: 0px;
 }
 .scoreboard .container table thead tr {
   background-color: var(--table-primary-color);
@@ -395,6 +419,7 @@
   .scoreboard .container {
     padding: 0;
     margin: 0;
+    height: 196px;
   }
 
   .section-third .menu {
