@@ -33,13 +33,12 @@ function display(){
     });
     this.classList.toggle('tab-border');
     if(this === document.querySelector('#tab-1')){
-        document.querySelector('#tab-1-content').classList.toggle('show');
+        document.querySelector('#tab-1-content').classList.add('show'); 
+        document.querySelector('.slider-title.choose').classList.remove('hide');    
     } else 
     if(this === document.querySelector('#tab-2')){
-        document.querySelector('#tab-2-content').classList.toggle('show');
-    } else 
-    if(this === document.querySelector('#tab-3')){
-        document.querySelector('#tab-3-content').classList.toggle('show');
+        document.querySelector('#tab-2-content').classList.add('show');
+        document.querySelector('.slider-title.choose').classList.add('hide');
     }
 }
 

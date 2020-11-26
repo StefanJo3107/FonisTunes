@@ -355,4 +355,61 @@
   transform: translateY(25px);
 }
 
+@media screen and (max-width: 750px) {
+  .tabs, .menu {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .tabs .btn, .menu .btn {
+    width: 4em;
+    height: 3.4em;
+    font-size: 1.1em;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .tabs .container {
+    grid-gap: 40rem;
+  }
+
+  .post-slider .next, .post-slider .prev {
+    top: 36%;
+  }
+  .post-slider .post-wrapper {
+    height: 190px;
+  }
+  .post-slider .post-wrapper .post img {
+    width: 100%;
+    height: 45%;
+  }
+  .post-slider .post-wrapper .post h4 {
+    font-size: 2em;
+  }
+
+  .slider-title {
+    margin: -10px;
+    font-size: 3em;
+  }
+
+  .scoreboard .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-third .menu {
+    line-height: 50px;
+  }
+  .section-third .game-header {
+    top: 80%;
+  }
+  .section-third .game-header .answers {
+    justify-content: unset;
+  }
+  .section-third .game-header .slider-title {
+    margin: 6px;
+    font-size: 1.7em;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

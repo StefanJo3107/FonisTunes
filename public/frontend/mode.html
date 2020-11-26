@@ -7,18 +7,23 @@
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/rotate.css">
     <title>FonisTunes | Dance with us</title>
 </head>
 <body>
+    <div class="container-rotate">
+        <i id="tilt" class="fas fa-mobile fa-3x"></i><h3>Please rotate your phone</h3>
+    </div>
     <div class="section section-second">
         <nav class="menu mode-menu">
-            <button class="btn btn-mode logout"><span class="icon-logout"><i class="fas fa-door-open fa-2x"></i></span><span class="span-text span-logout">Logout</span></button>
-            <button class="btn btn-mode user"><span class="span-text span-username">Guest</span><span class="icon-user"><i class="fas fa-user fa-2x"></i></span></button>
+            <button class="btn btn-mode logout"><span class="icon-logout"><i class="fas fa-door-open fa-2x"></i></span><span class="span-text span-logout hide">Logout</span></button>
+            <h1 class="slider-title choose">Choose mode</h1>
+            <button class="btn btn-mode user"><span class="span-text span-username hide">Guest</span><span class="icon-user"><i class="fas fa-user fa-2x"></i></span></button>
         </nav>
         <!-- Slider -->
         
         <div id="tab-1-content" class="post-slider tab-content-item show">
-            <h1 class="slider-title">Choose mode</h1>
+            
             <i class="fas fa-chevron-left prev fa-2x"></i>
             <i class="fas fa-chevron-right next fa-2x"></i>
             
@@ -44,7 +49,7 @@
                 <div class="post post-classic">
                     <img src="images/classic.jpg" alt="classical music" class="slider-image">
                     <div class="post-info">
-                        <h4>Classical music</h4>
+                        <h4>Classic</h4>
                     </div>
                 </div>
                 <div class="post post-rep">
@@ -69,7 +74,6 @@
         </div>
         <!-- Table, score-->
         <div id="tab-2-content" class="scoreboard tab-content-item">
-            <h1 class="slider-title">Scoreboard</h1>
             <div class="container">
                 <table>
                     <thead>
@@ -109,11 +113,11 @@
             <div class="container">
                 <div id="tab-1" class="tab-item tab-border">
                     <i class="fas fa-gamepad fa-2x"></i>
-                    <p>Mode</p>
+                    <p class="hide">Mode</p>
                 </div>
                 <div id="tab-2" class="tab-item">
                     <i class="far fa-clipboard fa-2x"></i>
-                    <p>Scoreboard</p>
+                    <p class="hide">Scoreboard</p>
                 </div>
             </div>
         </section>
