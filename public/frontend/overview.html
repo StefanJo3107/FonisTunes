@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Cookie"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>FonisTunes | Dance with us</title>
+    </head>
+    <body>
+        <div class="container-rotate">
+            <i id="tilt" class="fas fa-mobile fa-3x"></i>
+            <h3>Please rotate your phone</h3>
+        </div>
+        <div class="section section-fourth">
+            <nav class="menu mode-menu">
+                <button class="btn btn-mode quit">
+                    <span class="icon-logout"
+                        ><i class="fas fa-backward fa-2x"></i></span
+                    ><span class="span-text span-quit">Quit</span>
+                </button>
+                <h1 class="heading-score">
+                    Score:<span class="score">0</span>
+                </h1>
+                <button class="btn btn-mode user">
+                    <span class="icon-user"
+                        ><i class="fas fa-user fa-2x"></i></span
+                    ><span class="span-text span-username">Guest</span>
+                </button>
+                <h2 class="heading-mode">
+                    Mode:<span class="mode"></span>
+                </h2>
+            </nav>
+           <!-- Table, score-->
+            <div id="tab-2-content" class="scoreboard tab-content-item show">
+                <div class="container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Artist</th>
+                                <th>Song</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody class="scores">
+                            <tr>
+                                <td class="number">1</td>
+                                <td class="artist">Queen</td>
+                                <td class="song">Bohemian rhapsody</td>
+                                <td class="time-to-guess">0.5<span>s</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="video-container">
+                <div class="color-overlay"></div>
+                <video autoplay loop muted>
+                    <source
+                        src="videos/GamePageVideo.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+            </div>
+        </div>
+        
+        <script src="js/game.js"></script>
+    </body>
+</html>
