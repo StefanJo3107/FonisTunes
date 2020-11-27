@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/rotate.css">
     <title>FonisTunes | Dance with us</title>
 </head>
 <body>
@@ -16,11 +15,32 @@
     </div>
     <div class="section section-first">
         <button class="btn btn-start first"><span class="span-text span-play">Play</span><span class="icon-play"><i class="fab fa-google-play fa-2x"></i></span></button>
+        <div class="content">
+            <button class="btn-info"><i class="fas fa-info-circle fa-2x"></i></button>
+        </div>
+        <div class="modal modal-hidden">
+            <div class="modal-contents">
+                <div class="modal-close-bar">
+                    <span class="close-x">&times;</span>
+                </div>      
+                <div>
+                    <h1>The team behind this game</h1>
+                    <div class="modal-wrapper">
+                        <h3>Jelena Milev<span>(Menthor)</span></h3>
+                        <h3>Stefan Jovanovic<span>(Beckend and UX design)</span></h3>
+                        <h3>Predrag Tanaskovic<span>(Video animations and design)</span></h3>
+                        <h3>Vladimir Lazarevic<span>(Frontend and design)</span></h3>
+                    </div>
+                    <footer>Copyright&copy; 2020 FonisTeam</footer>
+                </div>
+            </div>
+        </div>
         <div class="video-container">
             <div class="color-overlay"></div>
             <video autoplay loop muted>
-                <source src="videos/final.mp4" type="video/mp4">
+                <source src="videos/FirstPageVideo.mp4" type="video/mp4">
             </video>
+            <audio src="audios/SoundForFirstPage.mp3" hidden autoplay></audio>
         </div>
     </div>
     <script src="js/first.js"></script>
