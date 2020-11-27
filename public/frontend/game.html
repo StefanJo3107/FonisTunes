@@ -1,64 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/loading.css">
-    <link rel="stylesheet" type="text/css" href="css/rotate.css">
-    <title>FonisTunes | Dance with us</title>
-</head>
-<body>
-    <div class="container-rotate">
-        <i id="tilt" class="fas fa-mobile fa-3x"></i><h3>Please rotate your phone</h3>
-    </div>
-    <!-- Loading -->
-    <div class="whole-game-section">
-        <div class="spinner-container">
-            <div class="circles">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Cookie"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/loading.css" />
+        <link rel="stylesheet" type="text/css" href="css/rotate.css" />
+        <title>FonisTunes | Dance with us</title>
+    </head>
+    <body>
+        <div class="container-rotate">
+            <i id="tilt" class="fas fa-mobile fa-3x"></i>
+            <h3>Please rotate your phone</h3>
         </div>
-        <div class="section section-third">
-            <nav class="menu mode-menu">
-                <button class="btn btn-mode quit"><span class="icon-logout"><i class="fas fa-backward fa-2x"></i></span><span class="span-text span-quit">Quit</span></button>
-                <h1 class="heading-score">Score:<span class="score">0</span></h1>
-                <button class="btn btn-mode user"><span class="icon-user"><i class="fas fa-user fa-2x"></i></span><span class="span-text span-username">Guest</span></button>
-                <h2 class="heading-mode">Mode:<span class="mode"></span></h2>
-            </nav>
-            <div class="game-header">
-                <h1 class="slider-title"><span class="question-number current">1</span><span> of </span><span class="question-number">5</span></h1>
-
-                <div class="answers">
-                    <div class="answer answer-1 text">Queen</div>
-                    <div class="answer answer-2 text">Led Zeppelin</div>
-                    <div class="answer answer-3 text">Pink Floyd</div>
-                    <div class="answer answer-4 text">Deep Purple</div>
+        <!-- Loading -->
+        <div class="whole-game-section">
+            <div class="spinner-container">
+                <div class="circles">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-                <audio src="" class="question-1" hidden></audio>
-                <audio src="" class="question-2" hidden></audio>
-                <audio src="" class="question-3" hidden></audio>
-                <audio src="" class="question-4" hidden></audio>
-                <audio src="" class="question-5" hidden></audio>
             </div>
-            <div class="video-container">
-                <div class="color-overlay"></div>
-                <video autoplay loop muted>
-                    <source src="videos/finalVersion.mp4" type="video/mp4">
-                </video>
+            <div class="section section-third">
+                <nav class="menu mode-menu">
+                    <button class="btn btn-mode quit">
+                        <span class="icon-logout"
+                            ><i class="fas fa-backward fa-2x"></i></span
+                        ><span class="span-text span-quit">Quit</span>
+                    </button>
+                    <h1 class="heading-score">
+                        Score:<span class="score">0</span>
+                    </h1>
+                    <button class="btn btn-mode user">
+                        <span class="icon-user"
+                            ><i class="fas fa-user fa-2x"></i></span
+                        ><span class="span-text span-username">Guest</span>
+                    </button>
+                    <h2 class="heading-mode">
+                        Mode:<span class="mode"></span>
+                    </h2>
+                </nav>
+                <div class="game-header">
+                    <h1 class="slider-title">
+                        <span class="question-number current-question">1</span
+                        ><span> of </span
+                        ><span class="question-number num-questions">5</span>
+                    </h1>
+
+                    <div class="answers">
+                        <div class="answer answer-1 text">Queen</div>
+                        <div class="answer answer-2 text">Led Zeppelin</div>
+                        <div class="answer answer-3 text">Pink Floyd</div>
+                        <div class="answer answer-4 text">Deep Purple</div>
+                    </div>
+                    <audio src="" class="question-1" hidden></audio>
+                    <audio src="" class="question-2" hidden></audio>
+                    <audio src="" class="question-3" hidden></audio>
+                    <audio src="" class="question-4" hidden></audio>
+                    <audio src="" class="question-5" hidden></audio>
+                </div>
+                <div class="video-container">
+                    <div class="color-overlay"></div>
+                    <video autoplay loop muted>
+                        <source
+                            src="videos/finalVersion.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="js/game.js"></script>
-</body>
+        <script src="js/game.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+        <script src="../musicAPI/music_data.js"></script>
+        <script src="js/game_manager.js"></script>
+        <script src="js/user_answer.js"></script>
+    </body>
 </html>

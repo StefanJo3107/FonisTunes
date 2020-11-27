@@ -55,20 +55,40 @@ function getTrack(trackID) {
 }
 
 function fetchRandomData() {
-    getRandomArtist().then((name) => {
-        getArtistID(name).then((artistID) => {
-            getRandomMusicVideo(artistID).then((mvid) => {
-                getTrack(mvid.idTrack).then((track) => {
-                    if (track.strTrack != undefined)
-                        console.log(
-                            `Artist:${track.strArtist},\nAlbum:${track.strAlbum},\nTrack:${track.strTrack}, \nURL:${mvid.strMusicVid}`
-                        );
-                });
-            });
+    let mvideo = undefined;
+    return getRandomArtist()
+        .then((name) => {
+            return getArtistID(name);
+        })
+        .then((artistID) => {
+            return getRandomMusicVideo(artistID);
+        })
+        .then((mvid) => {
+            mvideo = mvid;
+            return getTrack(mvid.idTrack);
+        })
+        .then((track) => {
+            if (track.strTrack !== undefined) {
+                // console.log(
+                //     `Artist:${track.strArtist},\nAlbum:${track.strAlbum},\nTrack:${track.strTrack},\nGenre:${track.strGenre},\nURL:${mvideo.strMusicVid}`
+                // );
+                return {
+                    artist: track.strArtist,
+                    album: track.strAlbum,
+                    track: track.strTrack,
+                    genre: track.strGenre,
+                    mvideo: mvideo.strMusicVid,
+                };
+            }
         });
-    });
 }
 
-for (let i = 0; i < 20; i++) {
-    fetchRandomData();
+function fetchMultipleTracks(numOfTracks) {
+    let tracks = [];
+    for (let i = 0; i < 2 * numOfTracks; i++) {
+        fetchRandomData().then((data) => console.log(data));
+        // fetchRandomData().then((trackData) => {
+        //     console.log("hey");
+        // });
+    }
 }
