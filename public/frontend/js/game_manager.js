@@ -7,12 +7,43 @@ let questionNumber = 0;
 
 let currentQuestionSpan = document.getElementsByClassName("current-question");
 let numQuestionsSpan = document.getElementsByClassName("num-questions");
+let modeSpan = document.getElementsByClassName("mode")[0];
 
 //0 for loading, 1 for playing
 let state = 0;
 
+let videoTime = {
+    start: 60,
+    end: 70,
+};
+
 //generating array for all the questions
 generateQuiz().then((quiz) => {
+    switch (sessionStorage.mode) {
+        case "hard":
+            videoTime.start = 60;
+            videoTime.end = 75;
+            break;
+        case "harder":
+        case "pick an artist":
+            videoTime.start = 65;
+            videoTime.end = 75;
+            break;
+        case "impossible":
+            videoTime.start = 70;
+            videoTime.end = 75;
+            break;
+        case "god mode":
+            videoTime.start = 72;
+            videoTime.end = 75;
+            break;
+        default:
+            window.location.replace("./mode.html");
+            break;
+    }
+
+    modeSpan.textContent = sessionStorage.mode.toUpperCase();
+
     numQuestionsSpan[0].textContent = numOfQuestions;
     currentQuestionSpan[0].textContent = questionNumber + 1;
     if (player.loadVideoById != undefined) {
@@ -34,7 +65,7 @@ function onPlayerReady(event) {
 //generating all questions
 function generateQuiz() {
     let promises = [];
-    for (let i = 0; i < numOfQuestions + 3; i++) {
+    for (let i = 0; i < numOfQuestions + 5; i++) {
         promises.push(
             generateAnswers().then((answers) => {
                 quiz.push(answers);
@@ -56,14 +87,36 @@ function generateAnswers() {
 
     let promises = [];
     for (let i = 0; i < numOfAnswers + 4; i++) {
-        promises.push(
-            fetchRandomData().then((data) => {
-                if (answers.correct === null || answers.correct === undefined)
-                    answers.correct = data;
-                else answers.other.push(data);
-                return true;
-            })
-        );
+        if (sessionStorage.mode !== "pick an artist") {
+            promises.push(
+                fetchRandomData().then((data) => {
+                    if (
+                        answers.correct === null ||
+                        answers.correct === undefined
+                    )
+                        answers.correct = data;
+                    else answers.other.push(data);
+                    return true;
+                })
+            );
+        } else {
+            promises.push(
+                fetchArtistData(sessionStorage.artist).then((data) => {
+                    if (data !== undefined) {
+                        if (
+                            answers.correct === null ||
+                            answers.correct === undefined
+                        )
+                            answers.correct = data;
+                        else answers.other.push(data);
+                        return true;
+                    } else {
+                        alert("Artist you picked is not currently available!");
+                        window.location.replace("mode.html");
+                    }
+                })
+            );
+        }
     }
 
     return Promise.all(promises).then((passed) => {
@@ -94,8 +147,8 @@ function loadNextVideo() {
         questionNumber++;
         player.loadVideoById({
             videoId: getId(quiz[questionIndex].correct.mvideo),
-            startSeconds: 50,
-            endSeconds: 60,
+            startSeconds: videoTime.start,
+            endSeconds: videoTime.end,
         });
     } else {
         sessionStorage.setItem("feedback", JSON.stringify(feedback));

@@ -1,160 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>FonisTunes | Dance with us</title>
-</head>
-<body>
-    <div class="container-rotate">
-        <i id="tilt" class="fas fa-mobile fa-3x"></i><h3>Please rotate your phone</h3>
-    </div>
-    <div class="section section-second">
-        <nav class="menu mode-menu">
-            <button class="btn btn-mode logout"><span class="icon-logout"><i class="fas fa-door-open fa-2x"></i></span><span class="span-text span-logout hide">Logout</span></button>
-            <h1 class="slider-title choose">Choose mode</h1>
-            <button class="btn btn-mode user"><span class="span-text span-username hide">Guest</span><span class="icon-user"><i class="fas fa-user fa-2x"></i></span></button>
-        </nav>
-        <!-- Slider -->
-        
-        <div id="tab-1-content" class="post-slider tab-content-item show">
-            
-            <i class="fas fa-chevron-left prev fa-2x"></i>
-            <i class="fas fa-chevron-right next fa-2x"></i>
-            
-            <div class="post-wrapper">
-                <div class="post post-hard">
-                    <img src="images/hard.png" alt="hard" class="slider-image">
-                    <div class="post-info">
-                        <h4>Hard</h4>
-                    </div>
-                </div>
-                <div class="post post-hardest">
-                    <img src="images/harder.png" alt="hardest" class="slider-image">
-                    <div class="post-info">
-                        <h4>Harder</h4>
-                    </div>
-                </div>
-                <div class="post post-impossible">
-                    <img src="images/impossible.png" alt="impossible" class="slider-image">
-                    <div class="post-info">
-                        <h4>Impossible</h4>
-                    </div>
-                </div>
-                <div class="post post-godmode">
-                    <img src="images/godmode.png" alt="god mode" class="slider-image">
-                    <div class="post-info">
-                        <h4>God mode</h4>
-                    </div>
-                </div>
-                <div id="sliderChoose" class="post post-choose" value="choose">
-                    <img src="images/pick.png" alt="choose artist" class="slider-image">
-                    <div class="post-info">
-                        <h4>You pick</h4>
-                    </div>
-                </div>
-            </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Cookie"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>FonisTunes | Dance with us</title>
+    </head>
+    <body>
+        <div class="container-rotate">
+            <i id="tilt" class="fas fa-mobile fa-3x"></i>
+            <h3>Please rotate your phone</h3>
         </div>
-        <div class="modal modal-choose modal-hidden">
-            <div class="modal-contents">
-                <div class="modal-close-bar">
-                    <span class="close-x">&times;</span>
-                </div>      
-                <div>
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="field">
-                            <label class="input-label">Pick an artist</label>
+        <div class="section section-second">
+            <nav class="menu mode-menu">
+                <button class="btn btn-mode logout">
+                    <span class="icon-logout"
+                        ><i class="fas fa-door-open fa-2x"></i></span
+                    ><span class="span-text span-logout hide">Logout</span>
+                </button>
+                <h1 class="slider-title choose">Choose mode</h1>
+                <button class="btn btn-mode user">
+                    <span class="span-text span-username hide">Guest</span
+                    ><span class="icon-user"
+                        ><i class="fas fa-user fa-2x"></i
+                    ></span>
+                </button>
+            </nav>
+            <!-- Slider -->
+
+            <div id="tab-1-content" class="post-slider tab-content-item show">
+                <i class="fas fa-chevron-left prev fa-2x"></i>
+                <i class="fas fa-chevron-right next fa-2x"></i>
+
+                <div class="post-wrapper">
+                    <div class="post post-hard" onclick="loadMode('hard')">
+                        <img
+                            src="images/hard.png"
+                            alt="hard"
+                            class="slider-image"
+                        />
+                        <div class="post-info">
+                            <h4>Hard</h4>
                         </div>
-                        <input type="submit" class="submit-btn" value="Play" />
-                    </form>
+                    </div>
+                    <div class="post post-hardest" onclick="loadMode('harder')">
+                        <img
+                            src="images/harder.png"
+                            alt="harder"
+                            class="slider-image"
+                        />
+                        <div class="post-info">
+                            <h4>Harder</h4>
+                        </div>
+                    </div>
+                    <div
+                        class="post post-impossible"
+                        onclick="loadMode('impossible')"
+                    >
+                        <img
+                            src="images/impossible.png"
+                            alt="impossible"
+                            class="slider-image"
+                        />
+                        <div class="post-info">
+                            <h4>Impossible</h4>
+                        </div>
+                    </div>
+                    <div
+                        class="post post-godmode"
+                        onclick="loadMode('god mode')"
+                    >
+                        <img
+                            src="images/godmode.png"
+                            alt="god mode"
+                            class="slider-image"
+                        />
+                        <div class="post-info">
+                            <h4>God mode</h4>
+                        </div>
+                    </div>
+                    <div
+                        id="sliderChoose"
+                        class="post post-choose"
+                        value="choose"
+                        onclick="openModal()"
+                    >
+                        <img
+                            src="images/pick.png"
+                            alt="choose artist"
+                            class="slider-image"
+                        />
+                        <div class="post-info">
+                            <h4>You pick</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="video-container">
-            <div class="color-overlay"></div>
-            <video autoplay loop muted>
-                <source src="videos/ModePageVideo.mp4" type="video/mp4">
-            </video>
-        </div>
-        <!-- Table, score-->
-        <div id="tab-2-content" class="scoreboard tab-content-item">
-            <div class="wrapper">
-                <ul class="firstList">
-                    <li>Mode
-                        <ul>
-                            <li>Hard</li>
-                            <li>Harder</li>
-                            <li>Impossible</li>
-                            <li>God mode</li>
-                            <li>Chosen artist</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Player</th>
-                            <th>Score</th>
-                        </tr>
-                    </thead>
-                    <tbody class="scores">
-                        <tr>
-                            <td class="player-name">Dzeca</td>
-                            <td class="player-score">2000</td>
-                        </tr>
-                        <tr>
-                            <td>Stefan</td>
-                            <td>1800</td>
-                        </tr>
-                        <tr>
-                            <td>Pedja</td>
-                            <td>1800</td>
-                        </tr>
-                        <tr>
-                            <td>Vladimir</td>
-                            <td>1800</td>
-                        </tr>
-                        <tr>
-                            <td>Stefan</td>
-                            <td>1800</td>
-                        </tr>
-                        <tr>
-                            <td>Pedja</td>
-                            <td>1800</td>
-                        </tr>
-                        <tr>
-                            <td>Vladimir</td>
-                            <td>1800</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <!-- Tabs -->
-        <section class="tabs">
-            <div class="container">
-                <div id="tab-1" class="tab-item tab-border">
-                    <i class="fas fa-gamepad fa-2x"></i>
-                    <p class="hide">Mode</p>
-                </div>
-                <div id="tab-2" class="tab-item">
-                    <i class="far fa-clipboard fa-2x"></i>
-                    <p class="hide">Scoreboard</p>
+            <div class="modal modal-choose modal-hidden">
+                <div class="modal-contents">
+                    <div class="modal-close-bar">
+                        <span class="close-x">&times;</span>
+                    </div>
+                    <div>
+                        <form onsubmit="pickAnArtist(e);">
+                            <div class="input-group">
+                                <input
+                                    type="text"
+                                    class="field"
+                                    id="artist-field"
+                                />
+                                <label class="input-label"
+                                    >Pick an artist</label
+                                >
+                            </div>
+                            <input
+                                type="submit"
+                                class="submit-btn"
+                                value="Play"
+                                onclick="pickAnArtist(event)"
+                            />
+                        </form>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/tilt.js"></script>
-    <script src="js/mode.js"></script>
-</body>
+            <div class="video-container">
+                <div class="color-overlay"></div>
+                <video autoplay loop muted>
+                    <source src="videos/ModePageVideo.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <!-- Table, score-->
+            <div id="tab-2-content" class="scoreboard tab-content-item">
+                <div class="wrapper">
+                    <ul class="firstList">
+                        <li>
+                            Mode
+                            <ul>
+                                <li>Hard</li>
+                                <li>Harder</li>
+                                <li>Impossible</li>
+                                <li>God mode</li>
+                                <li>Chosen artist</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Player</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody class="scores">
+                            <tr>
+                                <td class="player-name">Dzeca</td>
+                                <td class="player-score">2000</td>
+                            </tr>
+                            <tr>
+                                <td>Stefan</td>
+                                <td>1800</td>
+                            </tr>
+                            <tr>
+                                <td>Pedja</td>
+                                <td>1800</td>
+                            </tr>
+                            <tr>
+                                <td>Vladimir</td>
+                                <td>1800</td>
+                            </tr>
+                            <tr>
+                                <td>Stefan</td>
+                                <td>1800</td>
+                            </tr>
+                            <tr>
+                                <td>Pedja</td>
+                                <td>1800</td>
+                            </tr>
+                            <tr>
+                                <td>Vladimir</td>
+                                <td>1800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Tabs -->
+            <section class="tabs">
+                <div class="container">
+                    <div id="tab-1" class="tab-item tab-border">
+                        <i class="fas fa-gamepad fa-2x"></i>
+                        <p class="hide">Mode</p>
+                    </div>
+                    <div id="tab-2" class="tab-item">
+                        <i class="far fa-clipboard fa-2x"></i>
+                        <p class="hide">Scoreboard</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script src="js/tilt.js"></script>
+        <script src="js/mode.js"></script>
+        <script></script>
+    </body>
 </html>

@@ -69,6 +69,24 @@ function fetchRandomData() {
         });
 }
 
+function fetchArtistData(artist) {
+    return getArtistID(artist.split(" ").join("_").toLowerCase())
+        .then((artistID) => {
+            return getRandomMusicVideo(artistID);
+        })
+        .then((mvid) => {
+            if (mvid.strTrack !== undefined) {
+                return {
+                    artist: artistName,
+                    track: mvid.strTrack,
+                    mvideo: mvid.strMusicVid,
+                };
+            } else {
+                return undefined;
+            }
+        });
+}
+
 function fetchMultipleTracks(numOfTracks) {
     let tracks = [];
     for (let i = 0; i < 2 * numOfTracks; i++) {
