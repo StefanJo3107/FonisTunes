@@ -377,15 +377,19 @@ th, td, .slider-title, .heading-mode, .heading-score, .answers {
 .scoreboard.show {
   display: block;
 }
+.scoreboard .wrapper {
+  margin-top: -14%;
+  margin-left: 4%;
+  user-select: none;
+}
 .scoreboard .container {
   margin: 25px 0;
   font-size: 1.6em;
-  min-width: 500px;
   padding: 20px;
   font-weight: 600;
   color: var(--secondary-color);
   font-family: var(--primary-font-family);
-  width: 700px;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,13 +409,14 @@ th, td, .slider-title, .heading-mode, .heading-score, .answers {
 .scoreboard .container table thead tr {
   background-color: var(--table-primary-color);
   color: var(--primary-color);
-  text-align: left;
 }
 .scoreboard .container table thead tr th:nth-child(1) {
+  text-align: center;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
 }
-.scoreboard .container table thead tr th:nth-child(3) {
+.scoreboard .container table thead tr th:nth-child(2) {
+  text-align: center;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -422,10 +427,12 @@ th, td, .slider-title, .heading-mode, .heading-score, .answers {
   font-weight: 300;
 }
 .scoreboard .container table tbody tr td:nth-child(1) {
+  text-align: center;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
 }
-.scoreboard .container table tbody tr td:nth-child(3) {
+.scoreboard .container table tbody tr td:nth-child(2) {
+  text-align: center;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -445,7 +452,7 @@ th, td, .slider-title, .heading-mode, .heading-score, .answers {
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
 }
-.scoreboard .container table tbody tr:nth-of-type(even) td:nth-child(3) {
+.scoreboard .container table tbody tr:nth-of-type(even) td:nth-child(2) {
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -515,7 +522,49 @@ form {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+  text-shadow-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.wrapper .firstList {
+  margin-top: 2%;
+}
+.wrapper ul {
+  list-style: none;
+}
+.wrapper ul li {
+  margin-top: 2px;
+  background: var(--secondary-color);
+  border-radius: 4rem;
+  width: 350px;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  color: var(--primary-color);
+  font-size: 24px;
+  position: relative;
+  font-family: var(--primary-font-family);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wrapper ul li:hover {
+  background: var(--table-secondary-color);
+}
+
+.wrapper ul ul {
+  display: none;
+}
+
+.wrapper ul li:hover > ul {
+  display: block;
+}
+
+.wrapper ul ul ul {
+  margin-left: 170px;
+  top: 0;
+  position: absolute;
 }
 
 .section-third nav, .section-fourth nav {
@@ -620,6 +669,10 @@ form {
     height: 196px;
   }
 
+  .scoreboard .container {
+    width: 300px;
+  }
+
   .section-third .menu {
     line-height: 50px;
   }
@@ -646,6 +699,16 @@ form {
     overflow-y: scroll;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
+  }
+
+  .wrapper ul {
+    margin-top: 1%;
+  }
+  .wrapper ul li {
+    width: 130px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
   }
 }
 .section-third {
@@ -876,7 +939,7 @@ form {
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
-.section-fourth .container table thead tr th:nth-child(3) {
+.section-fourth .container table thead tr th:nth-child(2) {
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
 }
@@ -884,7 +947,7 @@ form {
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
-.section-fourth .container table tbody tr td:nth-child(3) {
+.section-fourth .container table tbody tr td:nth-child(2) {
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
 }
@@ -892,7 +955,7 @@ form {
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
-.section-fourth .container table tbody tr:nth-of-type(even) td:nth-child(3) {
+.section-fourth .container table tbody tr:nth-of-type(even) td:nth-child(2) {
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
 }
