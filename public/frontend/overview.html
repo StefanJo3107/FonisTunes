@@ -40,44 +40,33 @@
                         ><i class="fas fa-user fa-2x"></i></span
                     ><span class="span-text span-username">Guest</span>
                 </button>
-                <h2 class="heading-mode">
-                    Mode:<span class="mode"></span>
-                </h2>
+                <h2 class="heading-mode">Mode:<span class="mode"></span></h2>
             </nav>
-           <!-- Table, score-->
+            <!-- Table, score-->
             <div id="tab-2-content" class="scoreboard tab-content-item show">
                 <div class="container">
-                    <table>
+                    <table class="scores-table">
                         <thead>
                             <tr>
                                 <th>No.</th>
                                 <th>Artist</th>
                                 <th>Song</th>
-                                <th>Time</th>
+                                <th>Guess</th>
                             </tr>
                         </thead>
-                        <tbody class="scores">
-                            <tr>
-                                <td class="number">1</td>
-                                <td class="artist">Queen</td>
-                                <td class="song">Bohemian rhapsody</td>
-                                <td class="time-to-guess">0.5<span>s</span></td>
-                            </tr>
-                        </tbody>
+                        <tbody class="scores"></tbody>
                     </table>
                 </div>
             </div>
             <div class="video-container">
                 <div class="color-overlay"></div>
                 <video autoplay loop muted>
-                    <source
-                        src="videos/GamePageVideo.mp4"
-                        type="video/mp4"
-                    />
+                    <source src="videos/GamePageVideo.mp4" type="video/mp4" />
                 </video>
             </div>
         </div>
-        
+
         <script src="js/game.js"></script>
+        <script src="js/show_results.js"></script>
     </body>
 </html>

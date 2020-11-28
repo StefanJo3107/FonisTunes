@@ -1,5 +1,3 @@
-const artistURL =
-    "https://cors-anywhere.herokuapp.com/https://www.randomlists.com/data/bands.json";
 const artistidURL = "https://theaudiodb.com/api/v1/json/1/search.php?s=";
 const allMusicVideosURL = "https://theaudiodb.com/api/v1/json/1/mvid.php?i=";
 const trackURL = "https://theaudiodb.com/api/v1/json/1/track.php?h=";
@@ -8,12 +6,8 @@ function getRandomArtist() {
     return axios
         .request("./musicAPI/bands.json")
         .then(function (response) {
-            return response.data.RandL.items[
-                Math.floor(Math.random() * response.data.RandL.items.length)
-            ].name
-                .split(" ")
-                .join("_")
-                .toLowerCase();
+            return response
+                .data.RandL.items[Math.floor(Math.random() * response.data.RandL.items.length)].name;
         })
         .catch(function (error) {
             return "";
@@ -55,26 +49,21 @@ function getTrack(trackID) {
 }
 
 function fetchRandomData() {
-    let mvideo = undefined;
+    let artistName = "";
     return getRandomArtist()
         .then((name) => {
-            return getArtistID(name);
+            artistName = name;
+            return getArtistID(name.split(" ").join("_").toLowerCase());
         })
         .then((artistID) => {
             return getRandomMusicVideo(artistID);
         })
         .then((mvid) => {
-            mvideo = mvid;
-            return getTrack(mvid.idTrack);
-        })
-        .then((track) => {
-            if (track.strTrack !== undefined) {
+            if (mvid.strTrack !== undefined) {
                 return {
-                    artist: track.strArtist,
-                    album: track.strAlbum,
-                    track: track.strTrack,
-                    genre: track.strGenre,
-                    mvideo: mvideo.strMusicVid,
+                    artist: artistName,
+                    track: mvid.strTrack,
+                    mvideo: mvid.strMusicVid,
                 };
             }
         });
