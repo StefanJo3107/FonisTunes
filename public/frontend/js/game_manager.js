@@ -2,7 +2,7 @@ let quiz = [];
 const numOfQuestions = 5;
 const numOfAnswers = 4;
 let roundOver = false;
-let questionIndex = 0;
+let questionIndex = -1;
 
 let currentQuestionSpan = document.getElementsByClassName("current-question");
 let numQuestionsSpan = document.getElementsByClassName("num-questions");
@@ -10,8 +10,15 @@ let numQuestionsSpan = document.getElementsByClassName("num-questions");
 generateQuiz().then((quiz) => {
     numQuestionsSpan[0].textContent = numOfQuestions;
     currentQuestionSpan[0].textContent = questionIndex + 1;
-    initializeAnswers(quiz[questionIndex]);
-    document.querySelector("body").classList.add("display");
+    player.cueVideoById({
+        videoId: getId(quiz[0].correct.mvideo),
+        startSeconds: 50,
+        endSeconds: 60,
+    });
+    // initializeAnswers(quiz[questionIndex]);
+    // setTimeout(() => {
+    //     player.playVideo();
+    // }, 1000);
 });
 
 function generateQuiz() {
@@ -61,13 +68,30 @@ function loadNextQuestion() {
     roundOver = true;
 
     if (questionIndex + 1 < numOfQuestions) {
-        setTimeout(function () {
-            questionIndex++;
-            roundOver = false;
-            currentQuestionSpan[0].textContent = questionIndex + 1;
-            initializeAnswers(quiz[questionIndex]);
-        }, 2000);
+        questionIndex++;
+        roundOver = false;
+        currentQuestionSpan[0].textContent = questionIndex + 1;
+        initializeAnswers(quiz[questionIndex]);
     } else {
         console.log("end");
+    }
+}
+
+function loadNextVideo() {
+    if (questionIndex + 1 <= numOfQuestions) {
+        player.cueVideoById({
+            videoId: getId(quiz[questionIndex + 1].correct.mvideo),
+            startSeconds: 50,
+            endSeconds: 60,
+        });
+    }
+}
+function onStateChanged(event) {
+    if (event.data == 5) {
+        console.log("hey");
+        player.playVideo();
+    } else if (event.data == 1) {
+        document.querySelector("body").classList.add("display");
+        loadNextQuestion();
     }
 }

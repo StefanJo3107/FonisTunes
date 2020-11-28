@@ -1,0 +1,712 @@
+{
+    "RandL": {
+        "meta": { "born": "November 26, 2020, 5:20 am" },
+        "items": [
+            {
+                "url": "https://www.amazon.com/My-Gift-Carrie-Underwood/dp/B08CWM7JX4/ref=zg_bsar_music_2/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61ROCgfra%2BL._AC_UL200_SR200,200_.jpg",
+                "name": "Carrie Underwood"
+            },
+            {
+                "url": "https://www.amazon.com/Rough-Rowdy-Ways-Bob-Dylan/dp/B0884BK38T/ref=zg_bsar_music_3/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61mkKowezQL._AC_UL200_SR200,200_.jpg",
+                "name": "Bob Dylan"
+            },
+            {
+                "url": "https://www.amazon.com/American-Standard-James-Taylor/dp/B0833VRR3T/ref=zg_bsar_music_4/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71D8i9mT0vL._AC_UL200_SR200,200_.jpg",
+                "name": "James Taylor"
+            },
+            {
+                "url": "https://www.amazon.com/Letter-You-Bruce-Springsteen/dp/B08HGB71RT/ref=zg_bsar_music_5/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71tMFqNtY2L._AC_UL200_SR200,200_.jpg",
+                "name": "Bruce Springsteen"
+            },
+            {
+                "url": "https://www.amazon.com/Holly-Dolly-Christmas-Parton/dp/B08FP5TZYZ/ref=zg_bsar_music_7/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/919U9z0wPDL._AC_UL200_SR200,200_.jpg",
+                "name": "Dolly Parton"
+            },
+            {
+                "url": "https://www.amazon.com/Fine-Line-Harry-Styles/dp/B07ZWBNZR4/ref=zg_bsar_music_8/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61jxIrniZOL._AC_UL200_SR200,200_.jpg",
+                "name": "Harry Styles"
+            },
+            {
+                "url": "https://www.amazon.com/Gaslighter-Chicks/dp/B0858T5RM1/ref=zg_bsar_music_9/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71ZNpT%2BbORL._AC_UL200_SR200,200_.jpg",
+                "name": "The Chicks"
+            },
+            {
+                "url": "https://www.amazon.com/Abbey-Road-Anniversary-LP-Beatles/dp/B07VNS48HD/ref=zg_bsar_music_10/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81dUVKQDBEL._AC_UL200_SR200,200_.jpg",
+                "name": "The Beatles"
+            },
+            {
+                "url": "https://www.amazon.com/Precious-Memories-Collection-2-CD/dp/B01MD041XX/ref=zg_bsar_music_11/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51pSLOOhkVL._AC_UL200_SR200,200_.jpg",
+                "name": "Alan Jackson"
+            },
+            {
+                "url": "https://www.amazon.com/POWER-UP-AC-DC/dp/B08KGT79CH/ref=zg_bsar_music_13/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61uBp8QYz1L._AC_UL200_SR200,200_.jpg",
+                "name": "AC/DC"
+            },
+            {
+                "url": "https://www.amazon.com/Dark-Side-Moon-Pink-Floyd/dp/B01LTHN0DG/ref=zg_bsar_music_14/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61hw9WloObL._AC_UL200_SR200,200_.jpg",
+                "name": "Pink Floyd"
+            },
+            {
+                "url": "https://www.amazon.com/Ordinary-Man-Ozzy-Osbourne/dp/B083PKY8JF/ref=zg_bsar_music_15/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61nzG2WOJDL._AC_UL200_SR200,200_.jpg",
+                "name": "Ozzy Osbourne"
+            },
+            {
+                "url": "https://www.amazon.com/Thriller-Michael-Jackson/dp/B01B2M9H76/ref=zg_bsar_music_16/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81wfye0hsDL._AC_UL200_SR200,200_.jpg",
+                "name": "Michael Jackson"
+            },
+            {
+                "url": "https://www.amazon.com/Legend-Vinyl-Bob-Marley-Wailers/dp/B000V7J82S/ref=zg_bsar_music_17/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71EFb-BEAeL._AC_UL200_SR200,200_.jpg",
+                "name": "Bob Marley"
+            },
+            {
+                "url": "https://www.amazon.com/Rumours-Fleetwood-Mac/dp/B004OKFISQ/ref=zg_bsar_music_21/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71HWqbh0BLL._AC_UL200_SR200,200_.jpg",
+                "name": "Fleetwood Mac"
+            },
+            {
+                "url": "https://www.amazon.com/folklore-Taylor-Swift/dp/B08DC84LWL/ref=zg_bsar_music_22/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81OReT%2B-6JL._AC_UL200_SR200,200_.jpg",
+                "name": "Taylor Swift"
+            },
+            {
+                "url": "https://www.amazon.com/WHEN-FALL-ASLEEP-WHERE-Yellow/dp/B07N3RG76T/ref=zg_bsar_music_24/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61e23dfEOBL._AC_UL200_SR200,200_.jpg",
+                "name": "Billie Eilish"
+            },
+            {
+                "url": "https://www.amazon.com/Homegrown-Neil-Young/dp/B0864GHVS3/ref=zg_bsar_music_25/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/A15VU23kS-L._AC_UL200_SR200,200_.jpg",
+                "name": "Neil Young"
+            },
+            {
+                "url": "https://www.amazon.com/Music-Be-Murdered-Eminem/dp/B083ZRZQ3Q/ref=zg_bsar_music_26/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51%2ByCLs4shL._AC_UL200_SR200,200_.jpg",
+                "name": "Eminem"
+            },
+            {
+                "url": "https://www.amazon.com/IGOR-Creator-Tyler/dp/B07T6S1CC1/ref=zg_bsar_music_29/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71udX8iRBsL._AC_UL200_SR200,200_.jpg",
+                "name": "Tyler"
+            },
+            {
+                "url": "https://www.amazon.com/Chromatica-Lady-Gaga/dp/B0857BHKPW/ref=zg_bsar_music_30/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81Le2R1yAgL._AC_UL200_SR200,200_.jpg",
+                "name": "Lady Gaga"
+            },
+            {
+                "url": "https://www.amazon.com/Ultimate-Sinatra-2-LP-Frank/dp/B00U1Z5NAQ/ref=zg_bsar_music_31/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/41WULGxwgEL._AC_UL200_SR200,200_.jpg",
+                "name": "Frank Sinatra"
+            },
+            {
+                "url": "https://www.amazon.com/Gigaton-Pearl-Jam/dp/B083T61W5J/ref=zg_bsar_music_35/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/819bem7XN7L._AC_UL200_SR200,200_.jpg",
+                "name": "Pearl Jam"
+            },
+            {
+                "url": "https://www.amazon.com/Back-Black-Vinyl-Amy-Winehouse/dp/B000RL2208/ref=zg_bsar_music_38/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/91SLiiGA4PL._AC_UL200_SR200,200_.jpg",
+                "name": "Amy Winehouse"
+            },
+            {
+                "url": "https://www.amazon.com/Circles-2LP-Clear-Vinyl-Miller/dp/B083P8RCQX/ref=zg_bsar_music_39/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81g4ZdB6btL._AC_UL200_SR200,200_.jpg",
+                "name": "Mac Miller"
+            },
+            {
+                "url": "https://www.amazon.com/21-Adele/dp/B004I1WIWU/ref=zg_bsar_music_43/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71ipksWZcjL._AC_UL200_SR200,200_.jpg",
+                "name": "Adele"
+            },
+            {
+                "url": "https://www.amazon.com/Bohemian-Rhapsody-2-LP-Queen/dp/B07L5V8C9R/ref=zg_bsar_music_44/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81xJRYgBuJL._AC_UL200_SR200,200_.jpg",
+                "name": "Queen"
+            },
+            {
+                "url": "https://www.amazon.com/Fully-Loaded-Country-Blake-Shelton/dp/B07YMFX3DS/ref=zg_bsar_music_45/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81onf4AmkgL._AC_UL200_SR200,200_.jpg",
+                "name": "Blake Shelton"
+            },
+            {
+                "url": "https://www.amazon.com/Essential-Johnny-Cash/dp/B01AEOM7DE/ref=zg_bsar_music_47/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/817VZsCODgL._AC_UL200_SR200,200_.jpg",
+                "name": "Johnny Cash"
+            },
+            {
+                "url": "https://www.amazon.com/Born-Here-Live-Die/dp/B084QLXFTP/ref=zg_bsar_music_49/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71Fdcro6EBL._AC_UL200_SR200,200_.jpg",
+                "name": "Luke Bryan"
+            },
+            {
+                "url": "https://www.amazon.com/Fine-Line-Harry-Styles/dp/B07ZWBPM15/ref=zg_bsar_music_50/140-2277891-9276561?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61uo57hXGxL._AC_UL200_SR200,200_.jpg",
+                "name": "Harry Styles"
+            },
+            {
+                "url": "https://www.amazon.com/Nevermind-Nirvana/dp/B0000088DC/ref=zg_bsar_music_52/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71VZjASx2kL._AC_UL200_SR200,200_.jpg",
+                "name": "Nirvana"
+            },
+            {
+                "url": "https://www.amazon.com/Purple-Rain-Remastered-Gram-Vinyl/dp/B071KWXJHG/ref=zg_bsar_music_55/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81dF3gYOEFL._AC_UL200_SR200,200_.jpg",
+                "name": "Prince"
+            },
+            {
+                "url": "https://www.amazon.com/dont-smile-LP-Opaque-Red/dp/B075MLB6GM/ref=zg_bsar_music_59/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51TfEdopV4L._AC_UL200_SR200,200_.jpg",
+                "name": "Billie Eilish"
+            },
+            {
+                "url": "https://www.amazon.com/Golden-Hour-LP-Kacey-Musgraves/dp/B079NBPH9S/ref=zg_bsar_music_62/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51k7S8%2BkLDL._AC_UL200_SR200,200_.jpg",
+                "name": "Kacey Musgraves"
+            },
+            {
+                "url": "https://www.amazon.com/Blues-Friends-Dion/dp/B086XCX576/ref=zg_bsar_music_66/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71PfnlN6oYL._AC_UL200_SR200,200_.jpg",
+                "name": "DION"
+            },
+            {
+                "url": "https://www.amazon.com/SPEED-NOW-Part-1/dp/B08BDSDFTH/ref=zg_bsar_music_68/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71wT9D4qidL._AC_UL200_SR200,200_.jpg",
+                "name": "Keith Urban"
+            },
+            {
+                "url": "https://www.amazon.com/Wall-Pink-Floyd/dp/B01IOED4BK/ref=zg_bsar_music_69/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81QzRZ4UoNL._AC_UL200_SR200,200_.jpg",
+                "name": "Pink Floyd"
+            },
+            {
+                "url": "https://www.amazon.com/After-Hours-Weeknd/dp/B084XT1P28/ref=zg_bsar_music_70/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71ffMedtKNL._AC_UL200_SR200,200_.jpg",
+                "name": "The Weeknd"
+            },
+            {
+                "url": "https://www.amazon.com/2014-Forest-Hills-Drive-Cole/dp/B00R5AI4AQ/ref=zg_bsar_music_74/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71XstPLx8PL._AC_UL200_SR200,200_.jpg",
+                "name": "J. Cole"
+            },
+            {
+                "url": "https://www.amazon.com/Coming-Home-Leon-Bridges/dp/B00VVZUQB6/ref=zg_bsar_music_77/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81nj3a%2BP0aL._AC_UL200_SR200,200_.jpg",
+                "name": "Leon Bridges"
+            },
+            {
+                "url": "https://www.amazon.com/Diamonds-2-LP-Elton-John/dp/B075VWFYFS/ref=zg_bsar_music_82/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71ZVy7640WL._AC_UL200_SR200,200_.jpg",
+                "name": "Elton John"
+            },
+            {
+                "url": "https://www.amazon.com/Platinum-Collection-CD-Box-Set/dp/B07WFJ9MLS/ref=zg_bsar_music_86/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71abIb3DWvL._AC_UL200_SR200,200_.jpg",
+                "name": "Queen"
+            },
+            {
+                "url": "https://www.amazon.com/Man-Moon-End-Day-Vinyl/dp/B002IDH4PQ/ref=zg_bsar_music_92/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51m%2BqOWNoEL._AC_UL200_SR200,200_.jpg",
+                "name": "Kid Cudi"
+            },
+            {
+                "url": "https://www.amazon.com/Revolver-Beatles/dp/B0041KVYIW/ref=zg_bsar_music_93/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/91ffeWzPNpL._AC_UL200_SR200,200_.jpg",
+                "name": "The Beatles"
+            },
+            {
+                "url": "https://www.amazon.com/Born-Die-Lana-Del-Rey/dp/B006ZWLXZ8/ref=zg_bsar_music_97/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/719SroNweJL._AC_UL200_SR200,200_.jpg",
+                "name": "Lana Del Rey"
+            },
+            {
+                "url": "https://www.amazon.com/Gold-Greatest-Hits-2-LP/dp/B00JSRXE3G/ref=zg_bsar_music_98/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51zKioWtcdL._AC_UL200_SR200,200_.jpg",
+                "name": "ABBA"
+            },
+            {
+                "url": "https://www.amazon.com/2020-Bon-Jovi/dp/B084XTBW5H/ref=zg_bsar_music_99/133-1448572-7510151?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71HVcNwTMlL._AC_UL200_SR200,200_.jpg",
+                "name": "Bon Jovi"
+            },
+            {
+                "url": "https://www.amazon.com/Fear-Inoculum-TOOL/dp/B07VGTYTBF/ref=zg_bsar_music_2/134-6823972-2090964?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71c837KdfhL._AC_UL200_SR200,200_.jpg",
+                "name": "TOOL"
+            },
+            {
+                "url": "https://www.amazon.com/Hurts-2B-Human-P-nk/dp/B07PVJT931/ref=zg_bsar_music_12/134-6823972-2090964?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/915NJ9DIKFL._AC_UL200_SR200,200_.jpg",
+                "name": "P!nk"
+            },
+            {
+                "url": "https://www.amazon.com/Dark-Side-Moon-Pink-Floyd/dp/B01LTHN0DG/ref=zg_bsar_music_15/134-6823972-2090964?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61hw9WloObL._AC_UL200_SR200,200_.jpg",
+                "name": "Pink Floyd"
+            },
+            {
+                "url": "https://www.amazon.com/We-Are-Not-Your-Kind/dp/B07RWSH4BP/ref=zg_bsar_music_27/134-6823972-2090964?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71bn3hrUU6L._AC_UL200_SR200,200_.jpg",
+                "name": "Slipknot"
+            },
+            {
+                "url": "https://www.amazon.com/Golden-Hour-LP-Kacey-Musgraves/dp/B079NBPH9S/ref=zg_bsar_music_37/134-6823972-2090964?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51k7S8%2BkLDL._AC_UL200_SR200,200_.jpg",
+                "name": "Kacey Musgraves"
+            },
+            {
+                "url": "https://www.amazon.com/No-Collaborations-Project-Ed-Sheeran/dp/B07S15WYZV/ref=zg_bsar_music_39/134-6823972-2090964?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71eSuyavZDL._AC_UL200_SR200,200_.jpg",
+                "name": "Ed Sheeran"
+            },
+            {
+                "url": "https://www.amazon.com/Lets-Rock-Black-Keys/dp/B07R4WPYS5/ref=zg_bsar_music_42/134-6823972-2090964?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71gfo3ivwsL._AC_UL200_SR200,200_.jpg",
+                "name": "The Black Keys"
+            },
+            {
+                "url": "https://www.amazon.com/Honky-Tonk-Machine-George-Strait/dp/B07HSK3H6M/ref=zg_bsar_music_49/134-6823972-2090964?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71ngzbGrPjL._AC_UL200_SR200,200_.jpg",
+                "name": "George Strait"
+            },
+            {
+                "url": "https://www.amazon.com/Fires-Greta-Van-Fleet/dp/B076JPC2Y9/ref=zg_bsar_music_7/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61blyJMUwvL._AC_UL200_SR200,200_.jpg",
+                "name": "Greta Van Fleet"
+            },
+            {
+                "url": "https://www.amazon.com/Evolve-Imagine-Dragons/dp/B07143J5MM/ref=zg_bsar_music_12/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/A1QsthUoerL._AC_UL200_SR200,200_.jpg",
+                "name": "Imagine Dragons"
+            },
+            {
+                "url": "https://www.amazon.com/Egypt-Station-Paul-McCartney/dp/B07DV95WN6/ref=zg_bsar_music_13/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81iYkvuNZ0L._AC_UL200_SR200,200_.jpg",
+                "name": "Paul McCartney"
+            },
+            {
+                "url": "https://www.amazon.com/love-Deluxe-Michael-Bubl%C3%A9/dp/B07HN2XHVC/ref=zg_bsar_music_18/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/819O3UMUP%2BL._AC_UL200_SR200,200_.jpg",
+                "name": "Michael Bubl"
+            },
+            {
+                "url": "https://www.amazon.com/Si-Deluxe-Andrea-Bocelli/dp/B07DL83X69/ref=zg_bsar_music_22/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81RudqzAWoL._AC_UL200_SR200,200_.jpg",
+                "name": "Andrea Bocelli"
+            },
+            {
+                "url": "https://www.amazon.com/Walls-Barbra-Streisand/dp/B07HGHZ7MX/ref=zg_bsar_music_26/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81ZVTqazZ7L._AC_UL200_SR200,200_.jpg",
+                "name": "Barbra Streisand"
+            },
+            {
+                "url": "https://www.amazon.com/Traces-Steve-Perry/dp/B07G1YKQ57/ref=zg_bsar_music_27/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81KMd9j68uL._AC_UL200_SR200,200_.jpg",
+                "name": "Steve Perry"
+            },
+            {
+                "url": "https://www.amazon.com/Happy-Xmas-Eric-Clapton/dp/B07GJJKWB5/ref=zg_bsar_music_28/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81mu9XvjxML._AC_UL200_SR200,200_.jpg",
+                "name": "Eric Clapton"
+            },
+            {
+                "url": "https://www.amazon.com/Dancing-Queen-Cher/dp/B07G976WN7/ref=zg_bsar_music_29/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81MdqjrHMML._AC_UL200_SR200,200_.jpg",
+                "name": "Cher"
+            },
+            {
+                "url": "https://www.amazon.com/Springsteen-Broadway-Bruce/dp/B07HN66XZ5/ref=zg_bsar_music_36/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/91qQ8PUGg6L._AC_UL200_SR200,200_.jpg",
+                "name": "Bruce Springsteen"
+            },
+            {
+                "url": "https://www.amazon.com/FIREPOWER-Judas-Priest/dp/B078SKX6ZV/ref=zg_bsar_music_40/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81um6dvHukL._AC_UL200_SR200,200_.jpg",
+                "name": "Judas Priest"
+            },
+            {
+                "url": "https://www.amazon.com/Man-Woods-Justin-Timberlake/dp/B0788YMYFV/ref=zg_bsar_music_45/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71uAL7uV7UL._AC_UL200_SR200,200_.jpg",
+                "name": "Justin Timberlake"
+            },
+            {
+                "url": "https://www.amazon.com/When-Legends-Rise-Godsmack/dp/B07B16NSYG/ref=zg_bsar_music_46/134-5174598-4824743?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71ee11vyMuL._AC_UL200_SR200,200_.jpg",
+                "name": "Godsmack"
+            },
+            {
+                "url": "https://www.amazon.com/Need-You-Now-Lady-Antebellum/dp/B002WIDRM6/ref=zg_bsar_music_4/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/41AlIm8j8AL._AC_UL200_SR200,200_.jpg",
+                "name": "Lady A"
+            },
+            {
+                "url": "https://www.amazon.com/Soldier-Love-Sade/dp/B002YIHO7I/ref=zg_bsar_music_7/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71CRh8rZOrL._AC_UL200_SR200,200_.jpg",
+                "name": "Sade"
+            },
+            {
+                "url": "https://www.amazon.com/Glee-Music-Christmas-Album-Cast/dp/B00442OCYK/ref=zg_bsar_music_8/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71eM0cG6KoL._AC_UL200_SR200,200_.jpg",
+                "name": "Glee Cast"
+            },
+            {
+                "url": "https://www.amazon.com/Sigh-No-More-Mumford-Sons/dp/B0032Y8XH8/ref=zg_bsar_music_10/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51hV9cnAROL._AC_UL200_SR200,200_.jpg",
+                "name": "Mumford &amp; Sons"
+            },
+            {
+                "url": "https://www.amazon.com/Recovery-Explicit-Eminem/dp/B003KUSUG8/ref=zg_bsar_music_11/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61fXEwg-lAL._AC_UL200_SR200,200_.jpg",
+                "name": "Eminem"
+            },
+            {
+                "url": "https://www.amazon.com/Suburbs-Arcade-Fire/dp/B003O85W3A/ref=zg_bsar_music_16/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61I8BL5RvgL._AC_UL200_SR200,200_.jpg",
+                "name": "Arcade Fire"
+            },
+            {
+                "url": "https://www.amazon.com/Incredible-Machine-Sugarland/dp/B003OUXEMY/ref=zg_bsar_music_21/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/41hU4lcq2EL._AC_UL200_SR200,200_.jpg",
+                "name": "Sugarland"
+            },
+            {
+                "url": "https://www.amazon.com/You-Get-What-Give/dp/B003V6L94Q/ref=zg_bsar_music_24/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/91XI-k9m0JL._AC_UL200_SR200,200_.jpg",
+                "name": "Zac Brown Band"
+            },
+            {
+                "url": "https://www.amazon.com/Valleys-Neptune-Jimi-Hendrix/dp/B00328G4V6/ref=zg_bsar_music_26/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71k8jDAb3IL._AC_UL200_SR200,200_.jpg",
+                "name": "Jimi Hendrix"
+            },
+            {
+                "url": "https://www.amazon.com/Exile-Main-Street-CD-Deluxe/dp/B0039TD7RC/ref=zg_bsar_music_30/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81iYdOXSwwL._AC_UL200_SR200,200_.jpg",
+                "name": "ROLLING STONES"
+            },
+            {
+                "url": "https://www.amazon.com/My-World-2-0-Justin-Bieber/dp/B0037AGASG/ref=zg_bsar_music_33/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51wGEt5%2BPJL._AC_UL200_SR200,200_.jpg",
+                "name": "Justin Bieber"
+            },
+            {
+                "url": "https://www.amazon.com/Lungs-Florence-Machine/dp/B001PB3RU8/ref=zg_bsar_music_38/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61ajREI41JL._AC_UL200_SR200,200_.jpg",
+                "name": "Florence + The Machine"
+            },
+            {
+                "url": "https://www.amazon.com/Teenage-Dream-Katy-Perry/dp/B003L77TZI/ref=zg_bsar_music_39/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61QhP44OwQL._AC_UL200_SR200,200_.jpg",
+                "name": "Katy Perry"
+            },
+            {
+                "url": "https://www.amazon.com/Fly-Moon-Great-American-Songbook/dp/B003X5F4R8/ref=zg_bsar_music_40/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81TL%2B0s13fL._AC_UL200_SR200,200_.jpg",
+                "name": "Rod Stewart"
+            },
+            {
+                "url": "https://www.amazon.com/Bootleg-Vol-Witmark-Demos-1962-1964/dp/B0040GJ312/ref=zg_bsar_music_41/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81-JIqs3eRL._AC_UL200_SR200,200_.jpg",
+                "name": "Bob Dylan"
+            },
+            {
+                "url": "https://www.amazon.com/Contra-Vampire-Weekend/dp/B002JN74WI/ref=zg_bsar_music_43/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71nOF5YACBL._AC_UL200_SR200,200_.jpg",
+                "name": "Vampire Weekend"
+            },
+            {
+                "url": "https://www.amazon.com/Neil-Diamond-Dreams/dp/B0041U7RE2/ref=zg_bsar_music_44/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71u2gRiG4IL._AC_UL200_SR200,200_.jpg",
+                "name": "Neil Diamond"
+            },
+            {
+                "url": "https://www.amazon.com/Leave-Your-Sleep-Natalie-Merchant/dp/B002ZCDR88/ref=zg_bsar_music_45/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81kMvTxSX2L._AC_UL200_SR200,200_.jpg",
+                "name": "Natalie Merchant"
+            },
+            {
+                "url": "https://www.amazon.com/N-D-Energy-Never-Dies/dp/B00192IV0O/ref=zg_bsar_music_46/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51Gt7MJuvxL._AC_UL200_SR200,200_.jpg",
+                "name": "The Black Eyed Peas"
+            },
+            {
+                "url": "https://www.amazon.com/Save-Me-San-Francisco-Train/dp/B002LIKMBQ/ref=zg_bsar_music_48/145-4935051-7484617?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/8140I4P-J8L._AC_UL200_SR200,200_.jpg",
+                "name": "Train"
+            },
+            {
+                "url": "https://www.amazon.com/Supernatural-Santana/dp/B00000J7J4/ref=zg_bsar_music_2/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/91z6SsRHMdL._AC_UL200_SR200,200_.jpg",
+                "name": "Santana"
+            },
+            {
+                "url": "https://www.amazon.com/Riding-King-Eric-Clapton-B/dp/B00004THAY/ref=zg_bsar_music_3/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81c-MTv4aUL._AC_UL200_SR200,200_.jpg",
+                "name": "B.B. King"
+            },
+            {
+                "url": "https://www.amazon.com/No-Strings-Attached-N-Sync/dp/B00004NRPZ/ref=zg_bsar_music_4/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/812H%2BOFXlCL._AC_UL200_SR200,200_.jpg",
+                "name": "'N Sync"
+            },
+            {
+                "url": "https://www.amazon.com/Brand-New-Day-Sting/dp/B00001QGQI/ref=zg_bsar_music_5/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/4127YY1PBVL._AC_UL200_SR200,200_.jpg",
+                "name": "Sting"
+            },
+            {
+                "url": "https://www.amazon.com/All-That-Cant-Leave-Behind/dp/B00004Z0LW/ref=zg_bsar_music_7/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/41V6Q1R4BJL._AC_UL200_SR200,200_.jpg",
+                "name": "U2"
+            },
+            {
+                "url": "https://www.amazon.com/Oops-Did-Again-Britney-Spears/dp/B00004SCX6/ref=zg_bsar_music_8/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81zgStH27mL._AC_UL200_SR200,200_.jpg",
+                "name": "Britney Spears"
+            },
+            {
+                "url": "https://www.amazon.com/Black-Blue-Backstreet-Boys/dp/B00005056C/ref=zg_bsar_music_10/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51xg4U5tNSL._AC_UL200_SR200,200_.jpg",
+                "name": "Backstreet Boys"
+            },
+            {
+                "url": "https://www.amazon.com/Play-Moby/dp/B00000J6AG/ref=zg_bsar_music_12/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/5107XD8268L._AC_UL200_SR200,200_.jpg",
+                "name": "Moby"
+            },
+            {
+                "url": "https://www.amazon.com/Human-Clay-Creed/dp/B00001NFCY/ref=zg_bsar_music_14/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71nXtTZpY6L._AC_UL200_SR200,200_.jpg",
+                "name": "Creed"
+            },
+            {
+                "url": "https://www.amazon.com/Fly-Dixie-Chicks/dp/B00000K29H/ref=zg_bsar_music_15/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81TNCfiCm%2BL._AC_UL200_SR200,200_.jpg",
+                "name": "Dixie Chicks"
+            },
+            {
+                "url": "https://www.amazon.com/Music-Madonna/dp/B00004X01U/ref=zg_bsar_music_19/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71GZ3YAluPL._AC_UL200_SR200,200_.jpg",
+                "name": "Madonna"
+            },
+            {
+                "url": "https://www.amazon.com/No-Angel-Dido/dp/B00000IAU3/ref=zg_bsar_music_20/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61h3QJpxytL._AC_UL200_SR200,200_.jpg",
+                "name": "Dido"
+            },
+            {
+                "url": "https://www.amazon.com/Breathe-Faith-Hill/dp/B00002SSRE/ref=zg_bsar_music_21/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81Nr12dC8yL._AC_UL200_SR200,200_.jpg",
+                "name": "Faith Hill"
+            },
+            {
+                "url": "https://www.amazon.com/Californication-Red-Hot-Chili-Peppers/dp/B00000J7JO/ref=zg_bsar_music_24/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71cDEsH0F5L._AC_UL200_SR200,200_.jpg",
+                "name": "Red Hot Chili Peppers"
+            },
+            {
+                "url": "https://www.amazon.com/All-Decade-Song-C%C3%A9line-Dion/dp/B000031XCR/ref=zg_bsar_music_25/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81KgXNGQ-8L._AC_UL200_SR200,200_.jpg",
+                "name": "Celine Dion"
+            },
+            {
+                "url": "https://www.amazon.com/Youre-One-Paul-Simon/dp/B00004XQP0/ref=zg_bsar_music_29/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51COc%2BF78IL._AC_UL200_SR200,200_.jpg",
+                "name": "Paul Simon"
+            },
+            {
+                "url": "https://www.amazon.com/Kid-Radiohead/dp/B00004XONN/ref=zg_bsar_music_30/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71I5kJS%2BdsL._AC_UL200_SR200,200_.jpg",
+                "name": "Radiohead"
+            },
+            {
+                "url": "https://www.amazon.com/Telling-Stories-Tracy-Chapman/dp/B000046Q8B/ref=zg_bsar_music_35/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/41DbzchjytL._AC_UL200_SR200,200_.jpg",
+                "name": "Tracy Chapman"
+            },
+            {
+                "url": "https://www.amazon.com/Greatest-Hits-Lenny-Kravitz/dp/B00004ZB9D/ref=zg_bsar_music_38/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71B8qkWKVQL._AC_UL200_SR200,200_.jpg",
+                "name": "Lenny Kravitz"
+            },
+            {
+                "url": "https://www.amazon.com/Christina-Aguilera/dp/B00000JY9M/ref=zg_bsar_music_42/146-8372688-9661423?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81a1PardTKL._AC_UL200_SR200,200_.jpg",
+                "name": "Christina Aguilera"
+            },
+            {
+                "url": "https://www.amazon.com/ASTROWORLD-Travis-Scott/dp/B07FZ99HXL/ref=zg_bs_38_4/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71lqI%2BMuHGL._AC_UL200_SR200,200_.jpg",
+                "name": "Travis Scott"
+            },
+            {
+                "url": "https://www.amazon.com/American-Teen-Khalid/dp/B01MRDBU58/ref=zg_bs_38_5/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71STN7dpGFL._AC_UL200_SR200,200_.jpg",
+                "name": "Khalid"
+            },
+            {
+                "url": "https://www.amazon.com/beerbongs-bentleys-2-LP-Clear/dp/B07GVXBDX8/ref=zg_bs_38_6/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71M6IekpaqL._AC_UL200_SR200,200_.jpg",
+                "name": "Post Malone"
+            },
+            {
+                "url": "https://www.amazon.com/Death-Race-Love-2-LP/dp/B07Q76LGDD/ref=zg_bs_38_7/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/816raO8yvrL._AC_UL200_SR200,200_.jpg",
+                "name": "Juice WRLD"
+            },
+            {
+                "url": "https://www.amazon.com/808s-Heartbreak-LP-CD-Vinyl/dp/B001JEM4RS/ref=zg_bs_38_8/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51FvW2ILXTL._AC_UL200_SR200,200_.jpg",
+                "name": "Kanye West"
+            },
+            {
+                "url": "https://www.amazon.com/Straight-Outta-Compton-Remastered-Explicit/dp/B00E1RTC20/ref=zg_bs_38_12/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81ESohUha%2BL._AC_UL200_SR200,200_.jpg",
+                "name": "N.W.A."
+            },
+            {
+                "url": "https://www.amazon.com/Beastie-Boys-Music-2-LP/dp/B08GPKFK6Z/ref=zg_bs_38_13/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81VZcxDaQJL._AC_UL200_SR200,200_.jpg",
+                "name": "Beastie Boys"
+            },
+            {
+                "url": "https://www.amazon.com/LP-XXXTENTACION/dp/B07CLW1R66/ref=zg_bs_38_14/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71GBsl4AoqL._AC_UL200_SR200,200_.jpg",
+                "name": "XXXTENTACION"
+            },
+            {
+                "url": "https://www.amazon.com/Because-Internet-Childish-Gambino/dp/B089M3VX3W/ref=zg_bs_38_17/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71QFgHeHeiL._AC_UL200_SR200,200_.jpg",
+                "name": "Childish Gambino"
+            },
+            {
+                "url": "https://www.amazon.com/Demon-Days-Vinyl-Gorillaz/dp/B00094ASR2/ref=zg_bs_38_21/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71RuqmNUbsL._AC_UL200_SR200,200_.jpg",
+                "name": "Gorillaz"
+            },
+            {
+                "url": "https://www.amazon.com/Kings-Disease-Nas/dp/B08GVGC672/ref=zg_bs_38_25/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71jJHiBlYPL._AC_UL200_SR200,200_.jpg",
+                "name": "Nas"
+            },
+            {
+                "url": "https://www.amazon.com/Stankonia-OutKast/dp/B00004TDPH/ref=zg_bs_38_32/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81rFN%2B3o2xL._AC_UL200_SR200,200_.jpg",
+                "name": "Outkast"
+            },
+            {
+                "url": "https://www.amazon.com/PERCEPTION-2-LP-NF/dp/B0757VF27Z/ref=zg_bs_38_34/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71H0Boik3bL._AC_UL200_SR200,200_.jpg",
+                "name": "NF"
+            },
+            {
+                "url": "https://www.amazon.com/Scorpion-2-LP-Drake/dp/B07HGBDS32/ref=zg_bs_38_35/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61rwDWld0yL._AC_UL200_SR200,200_.jpg",
+                "name": "Drake"
+            },
+            {
+                "url": "https://www.amazon.com/Black-Album-Vinyl-JAY-Z/dp/B0000UX5I4/ref=zg_bs_38_37/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81Ymw4b1TxL._AC_UL200_SR200,200_.jpg",
+                "name": "Jay-Z"
+            },
+            {
+                "url": "https://www.amazon.com/Good-Kid-m-d-City/dp/B009F1ZYO2/ref=zg_bs_38_38/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51R0mNJpZbL._AC_UL200_SR200,200_.jpg",
+                "name": "Kendrick Lamar"
+            },
+            {
+                "url": "https://www.amazon.com/2001-2-LP-Dr-Dre/dp/B07S3D966F/ref=zg_bs_38_40/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/511Q7obj3kL._AC_UL200_SR200,200_.jpg",
+                "name": "Dr. Dre"
+            },
+            {
+                "url": "https://www.amazon.com/Hotel-Diablo-Machine-Gun-Kelly/dp/B07VDMLF5Y/ref=zg_bs_38_45/146-3884487-8315843?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71E-kOnKMGL._AC_UL200_SR200,200_.jpg",
+                "name": "Machine Gun Kelly"
+            },
+            {
+                "url": "https://www.amazon.com/Nevermind-Nirvana/dp/B0000088DC/ref=zg_bs_30_1/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71VZjASx2kL._AC_UL200_SR200,200_.jpg",
+                "name": "Nirvana"
+            },
+            {
+                "url": "https://www.amazon.com/Foo-Fighters-Greatest-Hits/dp/B002PL5GTC/ref=zg_bs_30_3/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81aG8fA3U5L._AC_UL200_SR200,200_.jpg",
+                "name": "Foo Fighters"
+            },
+            {
+                "url": "https://www.amazon.com/Made-M-One-Direction/dp/B016B6LOHY/ref=zg_bs_30_4/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/91Sw0Hbc10L._AC_UL200_SR200,200_.jpg",
+                "name": "One Direction"
+            },
+            {
+                "url": "https://www.amazon.com/III-Lumineers/dp/B07QFB78W6/ref=zg_bs_30_7/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/81K0pc3PUHL._AC_UL200_SR200,200_.jpg",
+                "name": "The Lumineers"
+            },
+            {
+                "url": "https://www.amazon.com/Emma-Forever-Ago-Vinyl/dp/B0011NVCSO/ref=zg_bs_30_9/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/51A6KhHRovL._AC_UL200_SR200,200_.jpg",
+                "name": "Bon Iver"
+            },
+            {
+                "url": "https://www.amazon.com/Divinely-Uninspired-Hellish-Extent-LP/dp/B07NPQRGWG/ref=zg_bs_30_15/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61-K3qJWGYL._AC_UL200_SR200,200_.jpg",
+                "name": "Lewis Capaldi"
+            },
+            {
+                "url": "https://www.amazon.com/1975-2-LP-Explicit/dp/B00CLOH240/ref=zg_bs_30_16/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71a6HvjGxDL._AC_UL200_SR200,200_.jpg",
+                "name": "The 1975"
+            },
+            {
+                "url": "https://www.amazon.com/Imploding-Mirage-Killers/dp/B085RT6PPD/ref=zg_bs_30_22/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/91-dFqF%2BlTL._AC_UL200_SR200,200_.jpg",
+                "name": "The Killers"
+            },
+            {
+                "url": "https://www.amazon.com/Blurryface-2LP-w-Digital-Download/dp/B010T34MLU/ref=zg_bs_30_24/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/7103AD5YBlL._AC_UL200_SR200,200_.jpg",
+                "name": "Twenty One Pilots"
+            },
+            {
+                "url": "https://www.amazon.com/Disintegration-Remastered-Vinyl-Cure/dp/B00318EDCY/ref=zg_bs_30_28/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61epkYq75pL._AC_UL200_SR200,200_.jpg",
+                "name": "The Cure"
+            },
+            {
+                "url": "https://www.amazon.com/Dookie-Green-Day/dp/B001U7WUW8/ref=zg_bs_30_31/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/91YyfXFsTtL._AC_UL200_SR200,200_.jpg",
+                "name": "Green Day"
+            },
+            {
+                "url": "https://www.amazon.com/DOOLITTLE-Vinyl-PIXIES/dp/B0002ONAM4/ref=zg_bs_30_45/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/812VStKC4FL._AC_UL200_SR200,200_.jpg",
+                "name": "Pixies"
+            },
+            {
+                "url": "https://www.amazon.com/Rush-Blood-Head-Vinyl/dp/B000069AUH/ref=zg_bs_30_49/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71nadF3Iw2L._AC_UL200_SR200,200_.jpg",
+                "name": "Coldplay"
+            },
+            {
+                "url": "https://www.amazon.com/Meteora-Linkin-Park/dp/B00008H2LB/ref=zg_bs_30_50/135-7629575-3174020?tag=randmlists-20",
+                "img": "https://images-na.ssl-images-amazon.com/images/I/71-nhMkC-vL._AC_UL200_SR200,200_.jpg",
+                "name": "Linkin Park"
+            }
+        ]
+    }
+}

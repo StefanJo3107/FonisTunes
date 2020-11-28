@@ -6,7 +6,7 @@ const trackURL = "https://theaudiodb.com/api/v1/json/1/track.php?h=";
 
 function getRandomArtist() {
     return axios
-        .request(artistURL)
+        .request("./musicAPI/bands.json")
         .then(function (response) {
             return response.data.RandL.items[
                 Math.floor(Math.random() * response.data.RandL.items.length)
@@ -58,6 +58,7 @@ function fetchRandomData() {
     let mvideo = undefined;
     return getRandomArtist()
         .then((name) => {
+            console.log(name);
             return getArtistID(name);
         })
         .then((artistID) => {
@@ -69,9 +70,6 @@ function fetchRandomData() {
         })
         .then((track) => {
             if (track.strTrack !== undefined) {
-                // console.log(
-                //     `Artist:${track.strArtist},\nAlbum:${track.strAlbum},\nTrack:${track.strTrack},\nGenre:${track.strGenre},\nURL:${mvideo.strMusicVid}`
-                // );
                 return {
                     artist: track.strArtist,
                     album: track.strAlbum,
@@ -87,8 +85,5 @@ function fetchMultipleTracks(numOfTracks) {
     let tracks = [];
     for (let i = 0; i < 2 * numOfTracks; i++) {
         fetchRandomData().then((data) => console.log(data));
-        // fetchRandomData().then((trackData) => {
-        //     console.log("hey");
-        // });
     }
 }

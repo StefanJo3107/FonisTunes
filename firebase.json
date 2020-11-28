@@ -1,18 +1,14 @@
 {
-  "hosting": {
-    "public": "public/musicAPI",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  },
-  "emulators": {
     "hosting": {
-      "port": 5000
+        "public": "public/frontend",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     },
-    "ui": {
-      "enabled": true
+    "emulators": {
+        "hosting": {
+            "port": 5000
+        },
+        "ui": {
+            "enabled": true
+        }
     }
-  }
 }

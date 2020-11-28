@@ -20,7 +20,7 @@ function getUserAnswer(optionIndex) {
             optionDivs[optionIndex].style.backgroundColor = "red";
         }
 
-        loadNextQuestion();
+        loadNextVideo();
     }
 }
 
