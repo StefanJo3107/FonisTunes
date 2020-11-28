@@ -58,7 +58,6 @@ function fetchRandomData() {
     let mvideo = undefined;
     return getRandomArtist()
         .then((name) => {
-            console.log(name);
             return getArtistID(name);
         })
         .then((artistID) => {

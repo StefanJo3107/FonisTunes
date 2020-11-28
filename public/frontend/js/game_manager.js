@@ -3,13 +3,14 @@ const numOfQuestions = 5;
 const numOfAnswers = 4;
 let roundOver = false;
 let questionIndex = -1;
+let questionNumber = 0;
 
 let currentQuestionSpan = document.getElementsByClassName("current-question");
 let numQuestionsSpan = document.getElementsByClassName("num-questions");
 
 generateQuiz().then((quiz) => {
     numQuestionsSpan[0].textContent = numOfQuestions;
-    currentQuestionSpan[0].textContent = questionIndex + 1;
+    currentQuestionSpan[0].textContent = questionNumber + 1;
     player.cueVideoById({
         videoId: getId(quiz[0].correct.mvideo),
         startSeconds: 50,
@@ -23,7 +24,7 @@ generateQuiz().then((quiz) => {
 
 function generateQuiz() {
     let promises = [];
-    for (let i = 0; i < numOfQuestions; i++) {
+    for (let i = 0; i < 2 * numOfQuestions; i++) {
         promises.push(
             generateAnswers().then((answers) => {
                 quiz.push(answers);
@@ -67,8 +68,8 @@ function generateAnswers() {
 function loadNextQuestion() {
     roundOver = true;
 
-    if (questionIndex + 1 < numOfQuestions) {
-        questionIndex++;
+    if (questionNumber + 1 < numOfQuestions) {
+        questionNumber++;
         roundOver = false;
         currentQuestionSpan[0].textContent = questionIndex + 1;
         initializeAnswers(quiz[questionIndex]);
@@ -78,20 +79,37 @@ function loadNextQuestion() {
 }
 
 function loadNextVideo() {
-    if (questionIndex + 1 <= numOfQuestions) {
+    if (questionNumber + 1 < numOfQuestions) {
+        questionIndex++;
         player.cueVideoById({
-            videoId: getId(quiz[questionIndex + 1].correct.mvideo),
+            videoId: getId(quiz[questionIndex].correct.mvideo),
             startSeconds: 50,
             endSeconds: 60,
         });
     }
 }
+
+function skipVideo() {
+    if (questionIndex + 1 < quiz.length) {
+        questionIndex++;
+        player.cueVideoById({
+            videoId: getId(quiz[questionIndex].correct.mvideo),
+            startSeconds: 50,
+            endSeconds: 60,
+        });
+    }
+}
+
 function onStateChanged(event) {
     if (event.data == 5) {
-        console.log("hey");
+        event.target.setPlaybackQuality("144p");
         player.playVideo();
     } else if (event.data == 1) {
         document.querySelector("body").classList.add("display");
         loadNextQuestion();
     }
+}
+function onPlayerError(event) {
+    questionNumber--;
+    skipVideo();
 }

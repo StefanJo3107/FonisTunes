@@ -15,6 +15,7 @@ function onYouTubeIframeAPIReady() {
         events: {
             onReady: onPlayerReady,
             onStateChange: onStateChanged,
+            onError: onPlayerError,
         },
     });
 }

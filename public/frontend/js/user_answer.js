@@ -25,7 +25,6 @@ function getUserAnswer(optionIndex) {
 }
 
 function initializeAnswers(answers) {
-    console.log(answers.correct.track);
     answerIndex = Math.floor(Math.random() * optionDivs.length);
 
     let otherAnswersIndex = 0;
