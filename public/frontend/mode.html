@@ -27,41 +27,51 @@
             <i class="fas fa-chevron-right next fa-2x"></i>
             
             <div class="post-wrapper">
-                <div class="post post-random">
-                    <img src="images/random.jpg" alt="music" class="slider-image">
+                <div class="post post-hard">
+                    <img src="images/hard.png" alt="hard" class="slider-image">
                     <div class="post-info">
-                        <h4>Random</h4>
+                        <h4>Hard</h4>
                     </div>
                 </div>
-                <div class="post post-rock">
-                    <img src="images/rock.jpg" alt="rock" class="slider-image">
+                <div class="post post-hardest">
+                    <img src="images/harder.png" alt="hardest" class="slider-image">
                     <div class="post-info">
-                        <h4>Rock</h4>
+                        <h4>Harder</h4>
                     </div>
                 </div>
-                <div class="post post-pop">
-                    <img src="images/pop.jpg" alt="pop" class="slider-image">
+                <div class="post post-impossible">
+                    <img src="images/impossible.png" alt="impossible" class="slider-image">
                     <div class="post-info">
-                        <h4>Pop</h4>
+                        <h4>Impossible</h4>
                     </div>
                 </div>
-                <div class="post post-classic">
-                    <img src="images/classic.jpg" alt="classical music" class="slider-image">
+                <div class="post post-godmode">
+                    <img src="images/godmode.png" alt="god mode" class="slider-image">
                     <div class="post-info">
-                        <h4>Classic</h4>
+                        <h4>God mode</h4>
                     </div>
                 </div>
-                <div class="post post-rep">
-                    <img src="images/rep.jpg" alt="rep" class="slider-image">
+                <div id="sliderChoose" class="post post-choose" value="choose">
+                    <img src="images/pick.png" alt="choose artist" class="slider-image">
                     <div class="post-info">
-                        <h4>Rep</h4>
+                        <h4>You pick</h4>
                     </div>
                 </div>
-                <div class="post post-jazz">
-                    <img src="images/jazz.jpg" alt="jazz" class="slider-image">
-                    <div class="post-info">
-                        <h4>Jazz</h4>
-                    </div>
+            </div>
+        </div>
+        <div class="modal modal-choose modal-hidden">
+            <div class="modal-contents">
+                <div class="modal-close-bar">
+                    <span class="close-x">&times;</span>
+                </div>      
+                <div>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="field">
+                            <label class="input-label">Pick an artist</label>
+                        </div>
+                        <input type="submit" class="submit-btn" value="Play" />
+                    </form>
                 </div>
             </div>
         </div>

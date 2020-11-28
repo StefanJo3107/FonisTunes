@@ -2,12 +2,23 @@ const logoutButtonMode = document.querySelector('.btn-mode.logout');
 logoutButtonMode.addEventListener('click', () => window.location.replace("index.html"));
 
 const mode = document.querySelectorAll('.post-slider .post');
-mode.forEach(mode => mode.addEventListener('click', () => window.location.replace("game.html")))
+mode.forEach(mode2 => {
+    mode2.addEventListener('click', () => {
+        if(mode2.id == 'sliderChoose'){
+            mode2.addEventListener('click', openModal);
+        }
+        else{
+            mode2.addEventListener('click', () => window.location.replace("game.html"))
+        }
+    });
+});
+
+
 
 $('.post-wrapper').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     nextArrow: $('.next'),
     prevArrow: $('.prev'),
@@ -43,3 +54,19 @@ function display(){
 }
 
 tabItems.forEach(tab => tab.addEventListener('click', display));
+
+//Modal for mode
+const  modalChoose = document.querySelector('.modal-choose');
+const closeX = document.querySelector('.close-x');
+
+closeX.addEventListener('click', closeModal);
+
+function openModal(){
+    modalChoose.classList.remove('modal-hidden');
+}
+
+function closeModal(){
+    modalChoose.classList.add('modal-hidden');
+}
+const pickPlay = document.querySelector('submit-btn');
+pickPlay.addEventListener('click', () => window.location.replace("game.html"));
