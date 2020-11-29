@@ -237,6 +237,12 @@ th, td, .slider-title, .heading-mode, .heading-score, .answers {
 .modalQuality .modal-contents h1 {
   margin-bottom: 0em;
 }
+.modalQuality .modal-contents form {
+  display: block;
+  margin: auto;
+  max-width: 10em;
+  position: relative;
+}
 .modalQuality .modal-contents form span {
   margin-bottom: 2px;
 }
@@ -257,13 +263,6 @@ th, td, .slider-title, .heading-mode, .heading-score, .answers {
 
 body {
   line-height: 1.5;
-}
-
-form {
-  display: block;
-  margin: auto;
-  max-width: 10em;
-  position: relative;
 }
 
 input {
