@@ -235,7 +235,7 @@ th, td, .slider-title, .heading-mode, .heading-score, .answers {
   height: 285px;
 }
 .modalQuality .modal-contents h1 {
-  margin-bottom: 0em;
+  margin-bottom: 5px;
 }
 .modalQuality .modal-contents form {
   display: block;
@@ -243,8 +243,69 @@ th, td, .slider-title, .heading-mode, .heading-score, .answers {
   max-width: 10em;
   position: relative;
 }
-.modalQuality .modal-contents form span {
-  margin-bottom: 2px;
+.modalQuality .modal-contents form input {
+  position: fixed;
+  top: -1.5em;
+  left: -1.5em;
+}
+.modalQuality .modal-contents form label {
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  font-family: "Amatic SC", cursive;
+  color: var(--secondary-color);
+  text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2);
+  transition: color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+.modalQuality .modal-contents form label:not(:last-of-type) {
+  margin-bottom: 1.5em;
+}
+.modalQuality .modal-contents form label span {
+  box-shadow: 0 0 0 0.2em currentColor inset, 0 0.2em 0.2em rgba(0, 0, 0, 0.2), 0 0.3em 0.2em rgba(0, 0, 0, 0.2) inset;
+  display: inline-block;
+  margin-right: 0.5em;
+  vertical-align: bottom;
+  width: 1.5em;
+  height: 1.5em;
+  transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 2), box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95), color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+.modalQuality .modal-contents form label span, .modalQuality .modal-contents form .worm__segment:before {
+  border-radius: 50%;
+}
+.modalQuality .modal-contents form input:checked + label, .modalQuality .modal-contents form input:checked + label span, .modalQuality .modal-contents form .worm__segment:before {
+  color: var(--secondary-color);
+}
+.modalQuality .modal-contents form input:checked + label, .modalQuality .modal-contents form input:checked + label span {
+  transition-delay: 0.4s;
+}
+.modalQuality .modal-contents form input:checked + label span {
+  transform: scale(1.2);
+}
+.modalQuality .modal-contents form .worm {
+  top: 0.375em;
+  left: 0.375em;
+}
+.modalQuality .modal-contents form .worm, .modalQuality .modal-contents form .worm__segment {
+  position: absolute;
+}
+.modalQuality .modal-contents form .worm__segment {
+  top: 0;
+  left: 0;
+  width: 0.75em;
+  height: 0.75em;
+  transition: transform 0.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+.modalQuality .modal-contents form .worm__segment:before {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  background: currentColor;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.modalQuality .modal-contents form .worm__segment:first-child:before, .modalQuality .modal-contents form .worm__segment:last-child:before {
+  box-shadow: 0 0 1em 0 currentColor;
 }
 .modalQuality .modal-contents .modal-wrapper {
   display: grid;
@@ -259,87 +320,6 @@ th, td, .slider-title, .heading-mode, .heading-score, .answers {
 }
 .close-x:hover, .closeQuality:hover {
   background-color: lightgray;
-}
-
-body {
-  line-height: 1.5;
-}
-
-input {
-  position: fixed;
-  top: -1.5em;
-  left: -1.5em;
-}
-
-label {
-  cursor: pointer;
-  display: block;
-  font-weight: bold;
-  font-family: "Amatic SC", cursive;
-  color: var(--secondary-color);
-  text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2);
-  transition: color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-}
-label:not(:last-of-type) {
-  margin-bottom: 1.5em;
-}
-label span {
-  box-shadow: 0 0 0 0.2em currentColor inset, 0 0.2em 0.2em rgba(0, 0, 0, 0.2), 0 0.3em 0.2em rgba(0, 0, 0, 0.2) inset;
-  display: inline-block;
-  margin-right: 0.5em;
-  vertical-align: bottom;
-  width: 1.5em;
-  height: 1.5em;
-  transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 2), box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95), color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-}
-
-label span, .worm__segment:before {
-  border-radius: 50%;
-}
-
-input:checked + label,
-input:checked + label span,
-.worm__segment:before {
-  color: var(--secondary-color);
-}
-
-input:checked + label, input:checked + label span {
-  transition-delay: 0.4s;
-}
-input:checked + label span {
-  transform: scale(1.2);
-}
-
-.modalQuality .modal-contents form span {
-  margin-bottom: 0px;
-  margin-right: 18px;
-}
-
-.worm {
-  top: 0.375em;
-  left: 0.375em;
-}
-.worm, .worm__segment {
-  position: absolute;
-}
-.worm__segment {
-  top: 0;
-  left: 0;
-  width: 0.75em;
-  height: 0.75em;
-  transition: transform 0.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-}
-.worm__segment:before {
-  animation-duration: 0.4s;
-  animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  background: currentColor;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.worm__segment:first-child:before, .worm__segment:last-child:before {
-  box-shadow: 0 0 1em 0 currentColor;
 }
 
 .worm__segment:nth-child(2) {
@@ -546,10 +526,9 @@ input:checked + label span {
 }
 
 /* States */
-input:nth-of-type(1):checked ~ .worm .worm__segment:before {
+form input:nth-of-type(1):checked ~ .worm .worm__segment:before {
   animation-name: hop1;
 }
-
 @keyframes hop1 {
   from, to {
     transform: translateX(0);
@@ -558,13 +537,13 @@ input:nth-of-type(1):checked ~ .worm .worm__segment:before {
     transform: translateX(-1.5em);
   }
 }
-input:nth-of-type(2):checked ~ .worm .worm__segment {
+
+form input:nth-of-type(2):checked ~ .worm .worm__segment {
   transform: translateY(3em);
 }
-input:nth-of-type(2):checked ~ .worm .worm__segment:before {
+form input:nth-of-type(2):checked ~ .worm .worm__segment:before {
   animation-name: hop2;
 }
-
 @keyframes hop2 {
   from, to {
     transform: translateX(0);
@@ -573,13 +552,13 @@ input:nth-of-type(2):checked ~ .worm .worm__segment:before {
     transform: translateX(-1.5em);
   }
 }
-input:nth-of-type(3):checked ~ .worm .worm__segment {
+
+form input:nth-of-type(3):checked ~ .worm .worm__segment {
   transform: translateY(6em);
 }
-input:nth-of-type(3):checked ~ .worm .worm__segment:before {
+form input:nth-of-type(3):checked ~ .worm .worm__segment:before {
   animation-name: hop3;
 }
-
 @keyframes hop3 {
   from, to {
     transform: translateX(0);
@@ -588,13 +567,13 @@ input:nth-of-type(3):checked ~ .worm .worm__segment:before {
     transform: translateX(-1.5em);
   }
 }
-input:nth-of-type(4):checked ~ .worm .worm__segment {
+
+form input:nth-of-type(4):checked ~ .worm .worm__segment {
   transform: translateY(9em);
 }
-input:nth-of-type(4):checked ~ .worm .worm__segment:before {
+form input:nth-of-type(4):checked ~ .worm .worm__segment:before {
   animation-name: hop4;
 }
-
 @keyframes hop4 {
   from, to {
     transform: translateX(0);
@@ -603,6 +582,7 @@ input:nth-of-type(4):checked ~ .worm .worm__segment:before {
     transform: translateX(-1.5em);
   }
 }
+
 /* Dark mode */
 @media screen and (prefers-color-scheme: dark) {
   body {
