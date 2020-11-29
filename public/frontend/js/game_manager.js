@@ -135,7 +135,7 @@ function generateAnswers() {
                                 data.mvids[indexes[randomIndex]].strMusicVid,
                         });
 
-                    array.splice(randomIndex, 1);
+                    indexes.splice(randomIndex, 1);
                 }
             })
         );
