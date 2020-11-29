@@ -1,4 +1,7 @@
 window.onload = () => {
+    const modeSpan = document.getElementsByClassName("mode")[0];
+    modeSpan.textContent = sessionStorage.mode;
+
     const results = JSON.parse(sessionStorage.feedback);
     for (let i = 0; i < results.length; i++) {
         let table = document.getElementsByClassName("scores-table")[0];
