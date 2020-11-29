@@ -37,6 +37,17 @@ function getRandomMusicVideo(artistID) {
         });
 }
 
+function getAllMusicVideos(artistID) {
+    return axios
+        .request(allMusicVideosURL + artistID)
+        .then(function (response) {
+            return response.data.mvids;
+        })
+        .catch(function (error) {
+            return "";
+        });
+}
+
 function getTrack(trackID) {
     return axios
         .request(trackURL + trackID)
@@ -72,10 +83,14 @@ function fetchRandomData() {
 function fetchArtistData(artist) {
     return getArtistID(artist.split(" ").join("_").toLowerCase())
         .then((artistID) => {
-            return getRandomMusicVideo(artistID);
+            return getAllMusicVideos(artistID);
         })
-        .then((mvid) => {
-            if (mvid.strTrack !== undefined) {
+        .then((mvids) => {
+            if (mvids !== undefined) {
+                return {
+                    artist: artist,
+                    mvids: mvids,
+                };
                 return {
                     artist: artist,
                     track: mvid.strTrack,

@@ -24,7 +24,18 @@ function getUserAnswer(optionIndex) {
     if (!roundOver) {
         if (optionIndex == answerIndex) {
             optionDivs[optionIndex].style.backgroundColor = "lightgreen";
-            score += 10;
+            score += Math.min(
+                Math.round(
+                    map(
+                        Math.round(videoTime.end - player.getCurrentTime()),
+                        0,
+                        videoTime.end - videoTime.start,
+                        0,
+                        10
+                    )
+                ) * 100,
+                100
+            );
             scoreSpan.textContent = score;
         } else {
             optionDivs[optionIndex].style.backgroundColor = "red";
@@ -69,3 +80,6 @@ function initializeAnswers(answers) {
         optionDivs[i].style.backgroundColor = optionBackgroundColor;
     }
 }
+
+const map = (value, x1, y1, x2, y2) =>
+    ((value - x1) * (y2 - x2)) / (y1 - x1) + x2;

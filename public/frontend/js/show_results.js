@@ -1,4 +1,6 @@
 window.onload = () => {
+    if (!sessionStorage.feedback) window.location.replace("mode.html");
+
     const modeSpan = document.getElementsByClassName("mode")[0];
     modeSpan.textContent = sessionStorage.mode;
 

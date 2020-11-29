@@ -43,10 +43,6 @@ generateQuiz().then((quiz) => {
     }
 
     modeSpan.textContent = sessionStorage.mode.toUpperCase();
-    if (quiz[0] === undefined) {
-        alert("Artist you picked is not currently available!");
-        window.location.replace("mode.html");
-    }
 
     numQuestionsSpan[0].textContent = numOfQuestions;
     currentQuestionSpan[0].textContent = questionNumber + 1;
@@ -90,25 +86,14 @@ function generateAnswers() {
     };
 
     let promises = [];
-    for (let i = 0; i < numOfAnswers + 4; i++) {
-        if (sessionStorage.mode !== "pick an artist") {
+    if (sessionStorage.mode !== "pick an artist") {
+        for (let i = 0; i < numOfAnswers + 4; i++) {
             promises.push(
                 fetchRandomData().then((data) => {
                     if (
-                        answers.correct === null ||
-                        answers.correct === undefined
-                    )
-                        answers.correct = data;
-                    else answers.other.push(data);
-                    return true;
-                })
-            );
-        } else {
-            promises.push(
-                fetchArtistData(sessionStorage.artist).then((data) => {
-                    if (
-                        answers.correct === null ||
-                        answers.correct === undefined
+                        (answers.correct === null ||
+                            answers.correct === undefined) &&
+                        data !== undefined
                     )
                         answers.correct = data;
                     else answers.other.push(data);
@@ -116,6 +101,44 @@ function generateAnswers() {
                 })
             );
         }
+    } else {
+        promises.push(
+            fetchArtistData(sessionStorage.artist).then((data) => {
+                if (data === undefined) {
+                    alert("Artist you picked is not currently available!");
+                    window.location.replace("mode.html");
+                }
+
+                const indexes = [];
+                for (let i = 0; i < data.mvids.length; i++) {
+                    indexes.push(i);
+                }
+                for (let i = 0; i < numOfAnswers; i++) {
+                    let randomIndex = Math.floor(
+                        Math.random() * indexes.length
+                    );
+                    if (
+                        answers.correct === null ||
+                        answers.correct === undefined
+                    )
+                        answers.correct = {
+                            artist: data.artist,
+                            track: data.mvids[indexes[randomIndex]].strTrack,
+                            mvideo:
+                                data.mvids[indexes[randomIndex]].strMusicVid,
+                        };
+                    else
+                        answers.other.push({
+                            artist: data.artist,
+                            track: data.mvids[indexes[randomIndex]].strTrack,
+                            mvideo:
+                                data.mvids[indexes[randomIndex]].strMusicVid,
+                        });
+
+                    array.splice(randomIndex, 1);
+                }
+            })
+        );
     }
 
     return Promise.all(promises).then((passed) => {

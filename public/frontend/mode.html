@@ -23,6 +23,7 @@
         <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
 
         <script>
             // Your web app's Firebase configuration
@@ -169,14 +170,22 @@
             <div id="tab-2-content" class="scoreboard tab-content-item">
                 <div class="wrapper">
                     <ul class="firstList">
-                        <li>
-                            Mode
+                        <li class="current-mode">
+                            Hard
                             <ul>
-                                <li>Hard</li>
-                                <li>Harder</li>
-                                <li>Impossible</li>
-                                <li>God mode</li>
-                                <li>Chosen artist</li>
+                                <li onclick="showLeaderboard('hard')">Hard</li>
+                                <li onclick="showLeaderboard('harder')">
+                                    Harder
+                                </li>
+                                <li onclick="showLeaderboard('impossible')">
+                                    Impossible
+                                </li>
+                                <li onclick="showLeaderboard('god mode')">
+                                    God mode
+                                </li>
+                                <li onclick="showLeaderboard('pick an artist')">
+                                    Pick an artist
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -251,5 +260,6 @@
         <script src="js/redirect_guest.js"></script>
         <script src="js/logout.js"></script>
         <script src="js/show_user.js"></script>
+        <script src="js/show_leaderboard.js"></script>
     </body>
 </html>
