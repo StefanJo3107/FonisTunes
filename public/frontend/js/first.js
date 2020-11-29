@@ -17,3 +17,18 @@ function openModal(){
 function closeModal(){
     modalAbout.classList.add('modal-hidden');
 }
+
+const btnQuality = document.querySelector('.btn-sett');
+btnQuality.addEventListener('click', openModalQuality);
+
+const modalQuality = document.querySelector('.modalQuality');
+const closeQuality = document.querySelector('.closeQuality');
+
+closeQuality.addEventListener('click', closeModalQuality);
+function openModalQuality(){
+    modalQuality.classList.remove('modal-hidden');
+}
+
+function closeModalQuality(){
+    modalQuality.classList.add('modal-hidden');
+}

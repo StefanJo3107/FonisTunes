@@ -7,8 +7,7 @@
     align-items: center
     justify-content: space-around
     animation: slideInFromTop 1s ease-in
-.btn-info
-    animation: slideInFromLeft 1s ease-in
+.btn-info, .btn-sett
     z-index: 1
     text-align: center
     outline: none
@@ -21,15 +20,24 @@
     border: none
     &:hover
         transform: scale(1)
+.btn-info
+    animation: slideInFromLeft 1s ease-in
+.btn-sett
+    animation: slideInFromRight 1s ease-in
 
 //Modal
 .content
     z-index: 100
     position: absolute
     top: 90%
-    left: 6%
     transform: translate(0%, -50%)
-.modal
+    display: flex
+    justify-content: space-between
+    width: 100%
+    padding-left: 6%
+    padding-right: 6%
+    padding-bottom: 2%
+.modal, .modalQuality
     z-index: 100
     position: absolute
     top: 0
@@ -59,32 +67,163 @@
             font-family: var(--primary-font-family)
             font-size: 3em
             text-align: center
-            margin-bottom: 2em
         footer
             color: var(--secondary-color)
             text-align: center
             margin-top: 5em
             font-family: var(--primary-font-family)
-    &-wrapper
-        display: grid
-        grid-template-columns: 1fr 1fr
-        grid-gap: 3em
-        h3
-            color: var(--secondary-color)
-            font-family: var(--primary-font-family)
-            text-align: center
-            font-weight: 700
-            font-size: 1.5em
+        .modal-wrapper
+            h3
+                color: var(--secondary-color)
+                font-family: var(--primary-font-family)
+                text-align: center
+                font-weight: 700
+                font-size: 1.5em
+                span
+                    padding: 5px
+                    font-size: .8em
+                    color: rgba(58, 58, 58, 0.8)
+.modal
+    .modal-contents
+        h1
+            margin-bottom: 2em
+        .modal-wrapper
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 3em
+.modalQuality
+    .modal-contents
+        height: 285px
+        h1
+            margin-bottom: 0em
+        
+        form
             span
-                padding: 5px
-                font-size: .8em
-                color: rgba(58, 58, 58, 0.8)
-.close-x
+                margin-bottom: 2px
+        .modal-wrapper
+            display: grid
+            grid-template-columns: 1fr 3fr
+            grid-gap: 1em
+
+.close-x, .closeQuality
     text-align: center
     width: 30px
     border-radius: 50%
     &:hover
         background-color: lightgray
+
+//inputs
+$wormDur: 0.4s
+$radioDur: 0.2s
+$timing1: cubic-bezier(0.45,0.05,0.55,0.95)
+$timing2: cubic-bezier(0.5,0,0.5,2)
+
+
+body
+    line-height: 1.5
+
+form
+    display: block
+    margin: auto
+    max-width: 10em
+    position: relative
+
+input
+    position: fixed
+    top: -1.5em
+    left: -1.5em
+
+label
+    $shadowColor: rgba(0,0,0,0.2)
+    cursor: pointer
+    display: block
+    font-weight: bold
+    font-family: 'Amatic SC', cursive
+    color: var(--secondary-color)
+    text-shadow: 0 0.1em 0.1em $shadowColor
+    transition: color $radioDur $timing1
+    &:not(:last-of-type)
+        margin-bottom: 1.5em
+    span
+        box-shadow: 0 0 0 0.2em currentColor inset, 0 0.2em 0.2em $shadowColor, 0 0.3em 0.2em $shadowColor inset
+        display: inline-block
+        margin-right: 0.5em
+        vertical-align: bottom
+        width: 1.5em
+        height: 1.5em
+        transition: transform $radioDur $timing2, box-shadow $radioDur $timing1, color $radioDur $timing1
+
+label span, .worm__segment:before
+    border-radius: 50%
+
+input:checked + label,
+input:checked + label span,
+.worm__segment:before
+    color: var(--secondary-color)
+
+input:checked + label
+    &, span
+        transition-delay: $wormDur
+    span
+        transform: scale(1.2)
+.modalQuality .modal-contents form span
+    margin-bottom: 0px
+    margin-right: 18px
+
+.worm
+    top: 0.375em
+    left: 0.375em
+    &, &__segment
+        position: absolute
+    &__segment
+        top: 0
+        left: 0
+        width: 0.75em
+        height: 0.75em
+        transition: transform $wormDur $timing1
+        &:before
+            animation-duration: $wormDur
+            animation-timing-function: $timing1
+            background: currentColor
+            content: ""
+            display: block
+            width: 100%
+            height: 100%
+        &:first-child, &:last-child
+            &:before
+                box-shadow: 0 0 1em 0 currentColor
+
+@for $s from 2 through 30
+    $delay: $wormDur/100 * ($s - 1)
+    .worm__segment:nth-child(#{$s})
+        transition-delay: $delay
+        &:before
+            animation-delay: $delay
+
+/* States */
+@for $s from 1 through 4
+    input:nth-of-type(#{$s}):checked ~ .worm .worm__segment
+        @if $s > 1
+            transform: translateY(3em * ($s - 1))
+        &:before
+            animation-name: hop#{$s}
+
+    @keyframes hop#{$s}
+        from, to
+            transform: translateX(0)
+        50%
+            transform: translateX(-1.5em)
+
+/* Dark mode */
+@media screen and (prefers-color-scheme: dark)
+    body
+        background: #242424
+        color: #f1f1f1
+	
+    input:checked + label,
+	input:checked + label span, 
+	.worm__segment:before
+        color: #5785f6
     
 @keyframes zoom
     0%
@@ -97,6 +236,13 @@
     0%
         opacity: 0.1
         transform: translateX(-100%)
+    100%
+        opacity: 1
+        transform: translateX(0)
+@keyframes slideInFromRight
+    0%
+        opacity: 0.1
+        transform: translateX(100%)
     100%
         opacity: 1
         transform: translateX(0)
