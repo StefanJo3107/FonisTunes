@@ -77,7 +77,7 @@ function fetchArtistData(artist) {
         .then((mvid) => {
             if (mvid.strTrack !== undefined) {
                 return {
-                    artist: artistName,
+                    artist: artist,
                     track: mvid.strTrack,
                     mvideo: mvid.strMusicVid,
                 };

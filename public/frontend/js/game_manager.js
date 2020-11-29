@@ -43,6 +43,10 @@ generateQuiz().then((quiz) => {
     }
 
     modeSpan.textContent = sessionStorage.mode.toUpperCase();
+    if (quiz[0] === undefined) {
+        alert("Artist you picked is not currently available!");
+        window.location.replace("mode.html");
+    }
 
     numQuestionsSpan[0].textContent = numOfQuestions;
     currentQuestionSpan[0].textContent = questionNumber + 1;
@@ -102,18 +106,13 @@ function generateAnswers() {
         } else {
             promises.push(
                 fetchArtistData(sessionStorage.artist).then((data) => {
-                    if (data !== undefined) {
-                        if (
-                            answers.correct === null ||
-                            answers.correct === undefined
-                        )
-                            answers.correct = data;
-                        else answers.other.push(data);
-                        return true;
-                    } else {
-                        alert("Artist you picked is not currently available!");
-                        window.location.replace("mode.html");
-                    }
+                    if (
+                        answers.correct === null ||
+                        answers.correct === undefined
+                    )
+                        answers.correct = data;
+                    else answers.other.push(data);
+                    return true;
                 })
             );
         }

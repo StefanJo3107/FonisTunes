@@ -1,102 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>FonisTunes | Dance with us</title>
-</head>
-<body>
-    <div class="container-rotate">
-        <i id="tilt" class="fas fa-mobile fa-3x"></i><h3>Please rotate your phone</h3>
-    </div>
-    <div class="section section-first">
-        <button class="btn btn-start first"><span class="span-text span-play">Play</span><span class="icon-play"><i class="fab fa-google-play fa-2x"></i></span></button>
-        <div class="content">
-            <button class="btn-info"><i class="fas fa-info-circle fa-2x"></i></button>
-            <button class="btn-sett"><i class="fas fa-cog fa-2x"></i></button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Cookie"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>FonisTunes | Dance with us</title>
+
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyDcp7CrAgLICaD2cuDBjSvUHKXc35nJSSI",
+                authDomain: "fonistunes.firebaseapp.com",
+                databaseURL: "https://fonistunes.firebaseio.com",
+                projectId: "fonistunes",
+                storageBucket: "fonistunes.appspot.com",
+                messagingSenderId: "468129695982",
+                appId: "1:468129695982:web:ef6156cd5b6bb0ee424bff",
+                measurementId: "G-8CH0VYQT1C",
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+    </head>
+    <body>
+        <div class="container-rotate">
+            <i id="tilt" class="fas fa-mobile fa-3x"></i>
+            <h3>Please rotate your phone</h3>
         </div>
-        <div class="modal modal-hidden">
-            <div class="modal-contents">
-                <div class="modal-close-bar">
-                    <span class="close-x">&times;</span>
-                </div>      
-                <div>
-                    <h1>The team behind this game</h1>
-                    <div class="modal-wrapper">
-                        <h3>Jelena Milev<span>(Menthor)</span></h3>
-                        <h3>Stefan Jovanovic<span>(Backend and UX design)</span></h3>
-                        <h3>Predrag Tanaskovic<span>(Video animations and design)</span></h3>
-                        <h3>Vladimir Lazarevic<span>(Frontend and design)</span></h3>
+        <div class="section section-first">
+            <button class="btn btn-start first">
+                <span class="span-text span-play">Play</span
+                ><span class="icon-play"
+                    ><i class="fab fa-google-play fa-2x"></i
+                ></span>
+            </button>
+            <div class="content">
+                <button class="btn-info">
+                    <i class="fas fa-info-circle fa-2x"></i>
+                </button>
+                <button class="btn-sett">
+                    <i class="fas fa-cog fa-2x"></i>
+                </button>
+            </div>
+            <div class="modal modal-hidden">
+                <div class="modal-contents">
+                    <div class="modal-close-bar">
+                        <span class="close-x">&times;</span>
                     </div>
-                    <footer>Copyright&copy; 2020 FonisTeam</footer>
+                    <div>
+                        <h1>The team behind this game</h1>
+                        <div class="modal-wrapper">
+                            <h3>Jelena Milev<span>(Menthor)</span></h3>
+                            <h3>
+                                Stefan Jovanovic<span
+                                    >(Backend and UX design)</span
+                                >
+                            </h3>
+                            <h3>
+                                Predrag Tanaskovic<span
+                                    >(Video animations and design)</span
+                                >
+                            </h3>
+                            <h3>
+                                Vladimir Lazarevic<span
+                                    >(Frontend and design)</span
+                                >
+                            </h3>
+                        </div>
+                        <footer>Copyright&copy; 2020 FonisTeam</footer>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="modalQuality modal-hidden">
-            <div class="modal-contents">
-                <div class="modal-close-bar">
-                    <span class="closeQuality">&times;</span>
-                </div>      
-                <div style="margin-top: -25px;">
-                    <h1>Set quality</h1>
-                    <div class="modal-wrapper">
-                        <form>
-                            <input id="a" type="radio" name="hopping" value="144p" checked>
-                            <label for="a"><span></span>144p</label>
-                            <input id="b" type="radio" name="hopping" value="240p">
-                            <label for="b"><span></span>240p</label>
-                            <input id="c" type="radio" name="hopping" value="360p">
-                            <label for="c"><span></span>360p</label>
-                            <input id="d" type="radio" name="hopping" value="720p">
-                            <label for="d"><span></span>720p</label>
-                            <div class="worm">
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                                <div class="worm__segment"></div>
-                            </div>
-                        </form>
+            <div class="modalQuality modal-hidden">
+                <div class="modal-contents">
+                    <div class="modal-close-bar">
+                        <span class="closeQuality">&times;</span>
+                    </div>
+                    <div style="margin-top: -25px">
+                        <h1>Set quality</h1>
+                        <div class="modal-wrapper">
+                            <form>
+                                <input
+                                    id="a"
+                                    type="radio"
+                                    name="hopping"
+                                    value="144p"
+                                    checked
+                                />
+                                <label for="a"><span></span>144p</label>
+                                <input
+                                    id="b"
+                                    type="radio"
+                                    name="hopping"
+                                    value="240p"
+                                />
+                                <label for="b"><span></span>240p</label>
+                                <input
+                                    id="c"
+                                    type="radio"
+                                    name="hopping"
+                                    value="360p"
+                                />
+                                <label for="c"><span></span>360p</label>
+                                <input
+                                    id="d"
+                                    type="radio"
+                                    name="hopping"
+                                    value="720p"
+                                />
+                                <label for="d"><span></span>720p</label>
+                                <div class="worm">
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                    <div class="worm__segment"></div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="video-container">
+                <div class="color-overlay"></div>
+                <video autoplay loop muted>
+                    <source src="videos/FirstPageVideo.mp4" type="video/mp4" />
+                </video>
+            </div>
         </div>
-        <div class="video-container">
-            <div class="color-overlay"></div>
-            <video autoplay loop muted>
-                <source src="videos/FirstPageVideo.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-    <script src="js/first.js"></script>
-</body>
+        <script src="js/first.js"></script>
+        <script src="js/auth.js"></script>
+    </body>
 </html>

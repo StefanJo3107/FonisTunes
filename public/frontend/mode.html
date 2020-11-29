@@ -19,6 +19,28 @@
         />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <title>FonisTunes | Dance with us</title>
+
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyDcp7CrAgLICaD2cuDBjSvUHKXc35nJSSI",
+                authDomain: "fonistunes.firebaseapp.com",
+                databaseURL: "https://fonistunes.firebaseio.com",
+                projectId: "fonistunes",
+                storageBucket: "fonistunes.appspot.com",
+                messagingSenderId: "468129695982",
+                appId: "1:468129695982:web:ef6156cd5b6bb0ee424bff",
+                measurementId: "G-8CH0VYQT1C",
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
     </head>
     <body>
         <div class="container-rotate">
@@ -226,6 +248,8 @@
         ></script>
         <script src="js/tilt.js"></script>
         <script src="js/mode.js"></script>
+        <script src="js/redirect-guest.js"></script>
+        <script src="js/logout.js"></script>
         <script></script>
     </body>
 </html>
