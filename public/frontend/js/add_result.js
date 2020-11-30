@@ -9,7 +9,7 @@ auth.onAuthStateChanged((user) => {
             uid: user.uid,
             username: user.displayName,
             mode: sessionStorage.mode,
-            score: sessionStorage.score,
+            score: parseInt(sessionStorage.score),
         });
 
         sessionStorage.removeItem("feedback");

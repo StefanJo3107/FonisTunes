@@ -12,10 +12,14 @@ let modeSpan = document.getElementsByClassName("mode")[0];
 //0 for loading, 1 for playing
 let state = 0;
 
+let started = false;
+
 let videoTime = {
     start: 60,
     end: 70,
 };
+
+let artistSongsUsed = [];
 
 //generating array for all the questions
 generateQuiz().then((quiz) => {
@@ -42,11 +46,14 @@ generateQuiz().then((quiz) => {
             break;
     }
 
-    modeSpan.textContent = sessionStorage.mode.toUpperCase();
+    if (sessionStorage.mode !== "pick an artist")
+        modeSpan.textContent = sessionStorage.mode.toUpperCase();
+    else modeSpan.textContent = sessionStorage.artist.toUpperCase();
 
     numQuestionsSpan[0].textContent = numOfQuestions;
     currentQuestionSpan[0].textContent = questionNumber + 1;
-    if (player.loadVideoById != undefined) {
+    if (player.loadVideoById != undefined && !started) {
+        started = true;
         loadNextVideo();
     }
 });
@@ -57,7 +64,8 @@ function onPlayerReady(event) {
     let video = document.getElementsByTagName("iframe")[0];
     video.style.width = 0;
     video.style.height = 0;
-    if (quiz.length > 0) {
+    if (quiz.length > 0 && !started) {
+        started = true;
         loadNextVideo();
     }
 }
@@ -113,21 +121,27 @@ function generateAnswers() {
                 for (let i = 0; i < data.mvids.length; i++) {
                     indexes.push(i);
                 }
-                for (let i = 0; i < numOfAnswers; i++) {
+                for (let i = 0; i < numOfAnswers + 3; i++) {
                     let randomIndex = Math.floor(
                         Math.random() * indexes.length
                     );
                     if (
-                        answers.correct === null ||
-                        answers.correct === undefined
-                    )
+                        (answers.correct === null ||
+                            answers.correct === undefined) &&
+                        !artistSongsUsed.includes(
+                            data.mvids[indexes[randomIndex]].strTrack
+                        )
+                    ) {
                         answers.correct = {
                             artist: data.artist,
                             track: data.mvids[indexes[randomIndex]].strTrack,
                             mvideo:
                                 data.mvids[indexes[randomIndex]].strMusicVid,
                         };
-                    else
+                        artistSongsUsed.push(
+                            data.mvids[indexes[randomIndex]].strTrack
+                        );
+                    } else
                         answers.other.push({
                             artist: data.artist,
                             track: data.mvids[indexes[randomIndex]].strTrack,

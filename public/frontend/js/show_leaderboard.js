@@ -24,11 +24,11 @@ function showLeaderboard(mode) {
         .limit(10)
         .onSnapshot((querySnapshot) => {
             const items = querySnapshot.docs.map((doc) => {
+                console.log(doc.data().score);
                 return `<tr><td>${doc.data().username}</td><td>${
                     doc.data().score
                 }</td></tr>`;
             });
             leaderboard.innerHTML = items.join("");
-            console.log(mode);
         });
 }

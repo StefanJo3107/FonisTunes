@@ -63,16 +63,18 @@ function initializeAnswers(answers) {
 
     for (let i = 0; i < optionDivs.length; i++) {
         if (answerIndex == i) {
-            optionDivs[i].innerHTML =
-                answers.correct.track.length > 30
-                    ? answers.correct.track.substring(0, 25) + "..."
-                    : answers.correct.track;
+            if (answers.correct.track.length > 30) {
+                answers.correct.track =
+                    answers.correct.track.substring(0, 25) + "...";
+            }
+            optionDivs[i].innerHTML = answers.correct.track;
         } else {
-            optionDivs[i].innerHTML =
-                answers.other[otherAnswersIndex].track > 30
-                    ? answers.other[otherAnswersIndex].track.substring(0, 25) +
-                      "..."
-                    : answers.other[otherAnswersIndex].track;
+            if (answers.other[otherAnswersIndex].track.length > 30) {
+                answers.other[otherAnswersIndex].track =
+                    answers.other[otherAnswersIndex].track.substring(0, 25) +
+                    "...";
+            }
+            optionDivs[i].innerHTML = answers.other[otherAnswersIndex].track;
             otherAnswersIndex++;
         }
 
