@@ -104,7 +104,7 @@ function generateAnswers() {
     } else {
         promises.push(
             fetchArtistData(sessionStorage.artist).then((data) => {
-                if (data === undefined) {
+                if (data === undefined || data.mvids.length < 8) {
                     alert("Artist you picked is not currently available!");
                     window.location.replace("mode.html");
                 }
@@ -135,7 +135,7 @@ function generateAnswers() {
                                 data.mvids[indexes[randomIndex]].strMusicVid,
                         });
 
-                    array.splice(randomIndex, 1);
+                    indexes.splice(randomIndex, 1);
                 }
             })
         );
