@@ -24,7 +24,7 @@ function getUserAnswer(optionIndex) {
     if (!roundOver) {
         if (optionIndex == answerIndex) {
             optionDivs[optionIndex].style.backgroundColor = "lightgreen";
-            score += Math.min(
+            score += Math.max(
                 Math.round(
                     map(
                         Math.round(videoTime.end - player.getCurrentTime()),
@@ -55,7 +55,6 @@ function getUserAnswer(optionIndex) {
 
 //answer initialization
 function initializeAnswers(answers) {
-    console.log(answers.correct.track);
     answerIndex = Math.floor(Math.random() * optionDivs.length);
 
     currentAnswer = answers.correct;
